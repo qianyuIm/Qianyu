@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Qianyu
+
+  Created by cyd on 2020/12/28.
+  
+*/
+// tabbar
+"tab_home" = "首页";
+"tab_bookShelf" = "书架";
+"tab_product" = "产品";
+"tab_video" = "视频";
+"tab_mine" = "我的";
+// empty
+"empty_title" = "数据为空";
+"empty_describe" = "请稍后重试";
+"empty_networkTitle" = "无法连接到网络";
+"empty_networkDescribe" = "请检查您的网络";
+// bookSelf
+"empty_bookSelf_title" = "空空如也";
+"empty_bookSelf_describe" = "快去用好书塞满书架吧!";

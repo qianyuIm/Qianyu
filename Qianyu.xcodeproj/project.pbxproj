@@ -1,0 +1,1556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D86B72868AEB5D51082347B /* Pods_Qianyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A98DAA2806676D84C7977C4 /* Pods_Qianyu.framework */; };
+		EF01C29E259C4A010096CB64 /* QYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C29D259C4A010096CB64 /* QYButton.swift */; };
+		EF01C2A1259C4A090096CB64 /* QYBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2A0259C4A090096CB64 /* QYBorderButton.swift */; };
+		EF01C2CB259C4A9F0096CB64 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2CA259C4A9F0096CB64 /* UIEdgeInsetsExtensions.swift */; };
+		EF01C2CE259C4B0D0096CB64 /* CGSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2CD259C4B0D0096CB64 /* CGSizeExtensions.swift */; };
+		EF01C2D1259C4C2D0096CB64 /* CALayerExetnsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2D0259C4C2D0096CB64 /* CALayerExetnsions.swift */; };
+		EF01C2D6259C4DDA0096CB64 /* QYColor+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2D5259C4DDA0096CB64 /* QYColor+Home.swift */; };
+		EF01C2DB259C5A1A0096CB64 /* QYGalleryHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2DA259C5A1A0096CB64 /* QYGalleryHomeController.swift */; };
+		EF01C2DF259C5A3F0096CB64 /* QYRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C2DE259C5A3F0096CB64 /* QYRouter.swift */; };
+		EF01C30F259C5DB00096CB64 /* QYRouterInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C30E259C5DB00096CB64 /* QYRouterInternal.swift */; };
+		EF01C312259C5E1D0096CB64 /* QYRouterExternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C311259C5E1D0096CB64 /* QYRouterExternal.swift */; };
+		EF01C318259C5FCE0096CB64 /* QYConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C317259C5FCE0096CB64 /* QYConfigs.swift */; };
+		EF01C31C259C60FB0096CB64 /* QYGalleryHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C31B259C60FB0096CB64 /* QYGalleryHomeViewModel.swift */; };
+		EF01C321259C67F30096CB64 /* HLJGalleryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C320259C67F30096CB64 /* HLJGalleryApi.swift */; };
+		EF01C326259C68B00096CB64 /* HLJGalleryApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C325259C68B00096CB64 /* HLJGalleryApiPath.swift */; };
+		EF01C329259C6D9E0096CB64 /* HLJMapHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C328259C6D9E0096CB64 /* HLJMapHandyJSON.swift */; };
+		EF01C32D259C79690096CB64 /* QYGalleryHomeMarkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C32C259C79690096CB64 /* QYGalleryHomeMarkItem.swift */; };
+		EF01C35A259C7CB30096CB64 /* QYGalleryHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C359259C7CB30096CB64 /* QYGalleryHomeHeaderView.swift */; };
+		EF01C388259C8FCE0096CB64 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01C387259C8FCE0096CB64 /* UIImageViewExtensions.swift */; };
+		EF510AE42599645B00607F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510AE32599645B00607F8C /* AppDelegate.swift */; };
+		EF510AE82599645B00607F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510AE72599645B00607F8C /* ViewController.swift */; };
+		EF510AEB2599645B00607F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF510AE92599645B00607F8C /* Main.storyboard */; };
+		EF510AED2599645C00607F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF510AEC2599645C00607F8C /* Assets.xcassets */; };
+		EF510AF02599645C00607F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF510AEE2599645C00607F8C /* LaunchScreen.storyboard */; };
+		EF510B1C25996D0500607F8C /* QYHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510B1B25996D0500607F8C /* QYHeaders.swift */; };
+		EF510B7D25996DD500607F8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF510B7F25996DD500607F8C /* Localizable.strings */; };
+		EF510BDB259970E000607F8C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510BDA259970E000607F8C /* R.generated.swift */; };
+		EF510C302599845800607F8C /* QianyuWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C2F2599845800607F8C /* QianyuWrapper.swift */; };
+		EF510C45259984B000607F8C /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C34259984B000607F8C /* UIViewControllerExtensions.swift */; };
+		EF510C46259984B000607F8C /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C35259984B000607F8C /* UIImageExtensions.swift */; };
+		EF510C47259984B000607F8C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C36259984B000607F8C /* UIViewExtensions.swift */; };
+		EF510C48259984B000607F8C /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C37259984B000607F8C /* UIButtonExtensions.swift */; };
+		EF510C49259984B000607F8C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C38259984B000607F8C /* UIColorExtensions.swift */; };
+		EF510C4A259984B000607F8C /* RxProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C3A259984B000607F8C /* RxProperty.swift */; };
+		EF510C4B259984B000607F8C /* ObservableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C3B259984B000607F8C /* ObservableExtensions.swift */; };
+		EF510C4C259984B000607F8C /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C3D259984B000607F8C /* CGRectExtensions.swift */; };
+		EF510C4D259984B000607F8C /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C3E259984B000607F8C /* CGFloatExtensions.swift */; };
+		EF510C4E259984B000607F8C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C3F259984B000607F8C /* StringExtensions.swift */; };
+		EF510C4F259984B000607F8C /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C40259984B000607F8C /* DoubleExtensions.swift */; };
+		EF510C50259984B000607F8C /* UITableView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C42259984B000607F8C /* UITableView+ReusableView.swift */; };
+		EF510C51259984B000607F8C /* UICollectionView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C43259984B000607F8C /* UICollectionView+ReusableView.swift */; };
+		EF510C52259984B000607F8C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C44259984B000607F8C /* ReusableView.swift */; };
+		EF510C7F259985FA00607F8C /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C78259985FA00607F8C /* EmptyDataSetView.swift */; };
+		EF510C80259985FA00607F8C /* EmptyDataSetView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C79259985FA00607F8C /* EmptyDataSetView+Extension.swift */; };
+		EF510C81259985FA00607F8C /* EmptyDataSetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C7A259985FA00607F8C /* EmptyDataSetSource.swift */; };
+		EF510C82259985FA00607F8C /* EmptyDataSetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C7B259985FA00607F8C /* EmptyDataSetDelegate.swift */; };
+		EF510C83259985FA00607F8C /* EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C7C259985FA00607F8C /* EmptyDataSet.swift */; };
+		EF510C84259985FA00607F8C /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C7E259985FA00607F8C /* ErrorTracker.swift */; };
+		EF510C882599862D00607F8C /* QYHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C872599862D00607F8C /* QYHUD.swift */; };
+		EF510CA02599886300607F8C /* QYToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510C9F2599886300607F8C /* QYToast.swift */; };
+		EF510CBA259988DB00607F8C /* QYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CB7259988DA00607F8C /* QYColor.swift */; };
+		EF510CBB259988DB00607F8C /* QYInch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CB8259988DA00607F8C /* QYInch.swift */; };
+		EF510CBC259988DB00607F8C /* QYFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CB9259988DB00607F8C /* QYFont.swift */; };
+		EF510CC72599B3A600607F8C /* QYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CC32599B3A600607F8C /* QYNavigationController.swift */; };
+		EF510CC82599B3A600607F8C /* QYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CC42599B3A600607F8C /* QYTabBarController.swift */; };
+		EF510CC92599B3A600607F8C /* QYLottieTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CC62599B3A600607F8C /* QYLottieTabBarItemContentView.swift */; };
+		EF510CEB2599B41900607F8C /* QYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CEA2599B41900607F8C /* QYLogger.swift */; };
+		EF510CEE2599B42E00607F8C /* AppDelegate+Vender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CED2599B42E00607F8C /* AppDelegate+Vender.swift */; };
+		EF510CF52599B51900607F8C /* QYHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CF22599B51900607F8C /* QYHomeViewModel.swift */; };
+		EF510CF62599B51900607F8C /* QYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CF42599B51900607F8C /* QYHomeController.swift */; };
+		EF510D172599B52600607F8C /* QYProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CFA2599B52500607F8C /* QYProductViewModel.swift */; };
+		EF510D182599B52600607F8C /* QYProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CFC2599B52500607F8C /* QYProductController.swift */; };
+		EF510D192599B52600607F8C /* QYVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510CFF2599B52500607F8C /* QYVideoViewModel.swift */; };
+		EF510D1A2599B52600607F8C /* QYVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D012599B52500607F8C /* QYVideoController.swift */; };
+		EF510D1B2599B52600607F8C /* QYBookShelfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D042599B52500607F8C /* QYBookShelfViewModel.swift */; };
+		EF510D1C2599B52600607F8C /* QYBookShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D062599B52500607F8C /* QYBookShelfController.swift */; };
+		EF510D1D2599B52600607F8C /* QYMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D092599B52500607F8C /* QYMineViewModel.swift */; };
+		EF510D1E2599B52600607F8C /* QYMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D0B2599B52500607F8C /* QYMineController.swift */; };
+		EF510D1F2599B52600607F8C /* QYViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D0E2599B52600607F8C /* QYViewModel.swift */; };
+		EF510D202599B52600607F8C /* HLJBaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D102599B52600607F8C /* HLJBaseItem.swift */; };
+		EF510D212599B52600607F8C /* QYTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D122599B52600607F8C /* QYTableviewController.swift */; };
+		EF510D222599B52600607F8C /* QYCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D132599B52600607F8C /* QYCollectionController.swift */; };
+		EF510D232599B52600607F8C /* QYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D142599B52600607F8C /* QYViewController.swift */; };
+		EF510D242599B52600607F8C /* QYBaseEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D162599B52600607F8C /* QYBaseEmptyView.swift */; };
+		EF510D672599B5C600607F8C /* QYReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D662599B5C600607F8C /* QYReachability.swift */; };
+		EF510D6B2599B5EF00607F8C /* QYRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D6A2599B5EF00607F8C /* QYRequest.swift */; };
+		EF510D7F2599BF3500607F8C /* tab_home.json in Resources */ = {isa = PBXBuildFile; fileRef = EF510D7A2599BF3500607F8C /* tab_home.json */; };
+		EF510D802599BF3500607F8C /* tab_novel.json in Resources */ = {isa = PBXBuildFile; fileRef = EF510D7B2599BF3500607F8C /* tab_novel.json */; };
+		EF510D812599BF3500607F8C /* tab_mine.json in Resources */ = {isa = PBXBuildFile; fileRef = EF510D7C2599BF3500607F8C /* tab_mine.json */; };
+		EF510D822599BF3500607F8C /* tab_product.json in Resources */ = {isa = PBXBuildFile; fileRef = EF510D7D2599BF3500607F8C /* tab_product.json */; };
+		EF510D832599BF3500607F8C /* tab_video.json in Resources */ = {isa = PBXBuildFile; fileRef = EF510D7E2599BF3500607F8C /* tab_video.json */; };
+		EF510D912599CB5E00607F8C /* AppDelegate+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D902599CB5E00607F8C /* AppDelegate+Internal.swift */; };
+		EF510D992599DAC500607F8C /* QYShortVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D982599DAC500607F8C /* QYShortVideo.swift */; };
+		EF510D9D2599DAE000607F8C /* QYShortVideoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510D9C2599DAE000607F8C /* QYShortVideoConfiguration.swift */; };
+		EF510DCF2599DB8A00607F8C /* QYShortVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF510DCE2599DB8A00607F8C /* QYShortVideo.bundle */; };
+		EF510DD22599DDF900607F8C /* SVNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510DD12599DDF900607F8C /* SVNavigationController.swift */; };
+		EF510DD52599DEB900607F8C /* SVPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510DD42599DEB900607F8C /* SVPickerManager.swift */; };
+		EF510DE12599ED1F00607F8C /* QYAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF510DE02599ED1F00607F8C /* QYAlert.swift */; };
+		EF5D8BB0259D9A0B007513FB /* QYRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BAE259D9A0B007513FB /* QYRefreshFooter.swift */; };
+		EF5D8BB1259D9A0B007513FB /* HLJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BAF259D9A0B007513FB /* HLJRefreshHeader.swift */; };
+		EF5D8BEE259DBC7D007513FB /* QYGalleryTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BEB259DBC7C007513FB /* QYGalleryTitleDataSource.swift */; };
+		EF5D8BEF259DBC7D007513FB /* QYGalleryTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BEC259DBC7D007513FB /* QYGalleryTitleCell.swift */; };
+		EF5D8BF0259DBC7D007513FB /* QYGalleryTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BED259DBC7D007513FB /* QYGalleryTitleItemModel.swift */; };
+		EF5D8BF4259DBD4E007513FB /* JXPagingListContainerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BF3259DBD4E007513FB /* JXPagingListContainerViewExtension.swift */; };
+		EF5D8BFA259DBDB8007513FB /* MJRefreshComponent+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BF8259DBDB8007513FB /* MJRefreshComponent+Rx.swift */; };
+		EF5D8BFB259DBDB8007513FB /* MJRefreshFooter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8BF9259DBDB8007513FB /* MJRefreshFooter+Rx.swift */; };
+		EF5D8C02259DBE42007513FB /* QYGalleryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C00259DBE42007513FB /* QYGalleryListController.swift */; };
+		EF5D8C03259DBE42007513FB /* QYGalleryVideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C01259DBE42007513FB /* QYGalleryVideoListController.swift */; };
+		EF5D8C09259DBE5B007513FB /* QYGalleryCategoryItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C06259DBE5B007513FB /* QYGalleryCategoryItemController.swift */; };
+		EF5D8C0A259DBE5B007513FB /* QYGalleryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C07259DBE5B007513FB /* QYGalleryDetailController.swift */; };
+		EF5D8C0B259DBE5B007513FB /* QYGalleryAllCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C08259DBE5B007513FB /* QYGalleryAllCategoryController.swift */; };
+		EF5D8C13259DBEB1007513FB /* QYGalleryCategoryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C0D259DBEB0007513FB /* QYGalleryCategoryListItem.swift */; };
+		EF5D8C14259DBEB1007513FB /* QYGalleryAllCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C0E259DBEB0007513FB /* QYGalleryAllCategoryItem.swift */; };
+		EF5D8C15259DBEB1007513FB /* QYGalleryCategoryMarkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C0F259DBEB0007513FB /* QYGalleryCategoryMarkItem.swift */; };
+		EF5D8C16259DBEB1007513FB /* QYGalleryImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C10259DBEB0007513FB /* QYGalleryImageItem.swift */; };
+		EF5D8C17259DBEB1007513FB /* QYGalleryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C11259DBEB1007513FB /* QYGalleryListItem.swift */; };
+		EF5D8C18259DBEB1007513FB /* QYGalleryListVideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C12259DBEB1007513FB /* QYGalleryListVideoItem.swift */; };
+		EF5D8C23259DBED0007513FB /* QYGalleryListVideoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C1B259DBECF007513FB /* QYGalleryListVideoLayout.swift */; };
+		EF5D8C24259DBED0007513FB /* QYGalleryListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C1C259DBECF007513FB /* QYGalleryListLayout.swift */; };
+		EF5D8C25259DBED0007513FB /* QYGalleryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C1D259DBECF007513FB /* QYGalleryDetailViewModel.swift */; };
+		EF5D8C26259DBED0007513FB /* QYGalleryListPosterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C1E259DBECF007513FB /* QYGalleryListPosterLayout.swift */; };
+		EF5D8C27259DBED0007513FB /* QYGalleryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C1F259DBECF007513FB /* QYGalleryListViewModel.swift */; };
+		EF5D8C28259DBED0007513FB /* QYGalleryVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C20259DBECF007513FB /* QYGalleryVideoViewModel.swift */; };
+		EF5D8C29259DBED0007513FB /* QYGalleryCategoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C21259DBED0007513FB /* QYGalleryCategoryItemViewModel.swift */; };
+		EF5D8C2A259DBED0007513FB /* QYGalleryAllCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C22259DBED0007513FB /* QYGalleryAllCategoryViewModel.swift */; };
+		EF5D8C36259DBF08007513FB /* QYGalleryCategoryItemHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C2C259DBF07007513FB /* QYGalleryCategoryItemHeaderCell.swift */; };
+		EF5D8C37259DBF08007513FB /* QYGalleryListVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C2D259DBF07007513FB /* QYGalleryListVideoCell.swift */; };
+		EF5D8C38259DBF08007513FB /* QYGalleryAllCategorySectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C2E259DBF07007513FB /* QYGalleryAllCategorySectionHeaderView.swift */; };
+		EF5D8C39259DBF08007513FB /* QYGalleryAllCategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C2F259DBF07007513FB /* QYGalleryAllCategoryDetailView.swift */; };
+		EF5D8C3A259DBF08007513FB /* QYGalleryCategoryItemHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C30259DBF07007513FB /* QYGalleryCategoryItemHeaderView.swift */; };
+		EF5D8C3B259DBF08007513FB /* QYGalleryAllCategoryIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C31259DBF07007513FB /* QYGalleryAllCategoryIndexCell.swift */; };
+		EF5D8C3C259DBF08007513FB /* QYGalleryAllCategoryDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C32259DBF08007513FB /* QYGalleryAllCategoryDetailCell.swift */; };
+		EF5D8C3D259DBF08007513FB /* QYGalleryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C33259DBF08007513FB /* QYGalleryListCell.swift */; };
+		EF5D8C3E259DBF08007513FB /* QYGalleryListPosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C34259DBF08007513FB /* QYGalleryListPosterCell.swift */; };
+		EF5D8C3F259DBF08007513FB /* QYGalleryAllCategoryIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8C35259DBF08007513FB /* QYGalleryAllCategoryIndexView.swift */; };
+		EF5D8CA2259DC034007513FB /* QYInch+Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8CA1259DC034007513FB /* QYInch+Gallery.swift */; };
+		EF5D8CA7259DC1C4007513FB /* QYCalculateHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8CA6259DC1C4007513FB /* QYCalculateHelp.swift */; };
+		EF5D8CAD259DC24D007513FB /* HLJUserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8CAC259DC24D007513FB /* HLJUserItem.swift */; };
+		EF5D8CB2259DC4FD007513FB /* QYAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8CB1259DC4FC007513FB /* QYAnimatedImageView.swift */; };
+		EF5D8CB6259DC5DC007513FB /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D8CB5259DC5DC007513FB /* CHTCollectionViewWaterfallLayout.swift */; };
+		EFE65A42259ABBEF003799C4 /* QYInsetsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE65A41259ABBEF003799C4 /* QYInsetsLabel.swift */; };
+		EFE65A47259ABD1A003799C4 /* QYLaunchAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE65A46259ABD1A003799C4 /* QYLaunchAd.swift */; };
+		EFE65ACE259B0F80003799C4 /* QYNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE65ACD259B0F80003799C4 /* QYNotification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A98DAA2806676D84C7977C4 /* Pods_Qianyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qianyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97775A12990B27C9921B90BC /* Pods-Qianyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qianyu.release.xcconfig"; path = "Target Support Files/Pods-Qianyu/Pods-Qianyu.release.xcconfig"; sourceTree = "<group>"; };
+		C36F119F561102E04279A14A /* Pods-Qianyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qianyu.debug.xcconfig"; path = "Target Support Files/Pods-Qianyu/Pods-Qianyu.debug.xcconfig"; sourceTree = "<group>"; };
+		EF01C29D259C4A010096CB64 /* QYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYButton.swift; sourceTree = "<group>"; };
+		EF01C2A0259C4A090096CB64 /* QYBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYBorderButton.swift; sourceTree = "<group>"; };
+		EF01C2CA259C4A9F0096CB64 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
+		EF01C2CD259C4B0D0096CB64 /* CGSizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtensions.swift; sourceTree = "<group>"; };
+		EF01C2D0259C4C2D0096CB64 /* CALayerExetnsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExetnsions.swift; sourceTree = "<group>"; };
+		EF01C2D5259C4DDA0096CB64 /* QYColor+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QYColor+Home.swift"; sourceTree = "<group>"; };
+		EF01C2DA259C5A1A0096CB64 /* QYGalleryHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYGalleryHomeController.swift; sourceTree = "<group>"; };
+		EF01C2DE259C5A3F0096CB64 /* QYRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRouter.swift; sourceTree = "<group>"; };
+		EF01C30E259C5DB00096CB64 /* QYRouterInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRouterInternal.swift; sourceTree = "<group>"; };
+		EF01C311259C5E1D0096CB64 /* QYRouterExternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRouterExternal.swift; sourceTree = "<group>"; };
+		EF01C317259C5FCE0096CB64 /* QYConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYConfigs.swift; sourceTree = "<group>"; };
+		EF01C31B259C60FB0096CB64 /* QYGalleryHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYGalleryHomeViewModel.swift; sourceTree = "<group>"; };
+		EF01C320259C67F30096CB64 /* HLJGalleryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLJGalleryApi.swift; sourceTree = "<group>"; };
+		EF01C325259C68B00096CB64 /* HLJGalleryApiPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLJGalleryApiPath.swift; sourceTree = "<group>"; };
+		EF01C328259C6D9E0096CB64 /* HLJMapHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLJMapHandyJSON.swift; sourceTree = "<group>"; };
+		EF01C32C259C79690096CB64 /* QYGalleryHomeMarkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYGalleryHomeMarkItem.swift; sourceTree = "<group>"; };
+		EF01C359259C7CB30096CB64 /* QYGalleryHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYGalleryHomeHeaderView.swift; sourceTree = "<group>"; };
+		EF01C387259C8FCE0096CB64 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		EF510AE02599645B00607F8C /* Qianyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qianyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF510AE32599645B00607F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF510AE72599645B00607F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF510AEA2599645B00607F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF510AEC2599645C00607F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF510AEF2599645C00607F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF510AF12599645C00607F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF510B1B25996D0500607F8C /* QYHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYHeaders.swift; sourceTree = "<group>"; };
+		EF510B1E25996D9100607F8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EF510B1F25996D9100607F8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EF510B7E25996DD500607F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF510B8025996DDA00607F8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EF510BDA259970E000607F8C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		EF510C2F2599845800607F8C /* QianyuWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QianyuWrapper.swift; sourceTree = "<group>"; };
+		EF510C34259984B000607F8C /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		EF510C35259984B000607F8C /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		EF510C36259984B000607F8C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		EF510C37259984B000607F8C /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		EF510C38259984B000607F8C /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		EF510C3A259984B000607F8C /* RxProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxProperty.swift; sourceTree = "<group>"; };
+		EF510C3B259984B000607F8C /* ObservableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableExtensions.swift; sourceTree = "<group>"; };
+		EF510C3D259984B000607F8C /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
+		EF510C3E259984B000607F8C /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		EF510C3F259984B000607F8C /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		EF510C40259984B000607F8C /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		EF510C42259984B000607F8C /* UITableView+ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableView.swift"; sourceTree = "<group>"; };
+		EF510C43259984B000607F8C /* UICollectionView+ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableView.swift"; sourceTree = "<group>"; };
+		EF510C44259984B000607F8C /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		EF510C78259985FA00607F8C /* EmptyDataSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetView.swift; sourceTree = "<group>"; };
+		EF510C79259985FA00607F8C /* EmptyDataSetView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmptyDataSetView+Extension.swift"; sourceTree = "<group>"; };
+		EF510C7A259985FA00607F8C /* EmptyDataSetSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetSource.swift; sourceTree = "<group>"; };
+		EF510C7B259985FA00607F8C /* EmptyDataSetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetDelegate.swift; sourceTree = "<group>"; };
+		EF510C7C259985FA00607F8C /* EmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSet.swift; sourceTree = "<group>"; };
+		EF510C7E259985FA00607F8C /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		EF510C872599862D00607F8C /* QYHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYHUD.swift; sourceTree = "<group>"; };
+		EF510C9F2599886300607F8C /* QYToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYToast.swift; sourceTree = "<group>"; };
+		EF510CB7259988DA00607F8C /* QYColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYColor.swift; sourceTree = "<group>"; };
+		EF510CB8259988DA00607F8C /* QYInch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYInch.swift; sourceTree = "<group>"; };
+		EF510CB9259988DB00607F8C /* QYFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYFont.swift; sourceTree = "<group>"; };
+		EF510CC32599B3A600607F8C /* QYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYNavigationController.swift; sourceTree = "<group>"; };
+		EF510CC42599B3A600607F8C /* QYTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYTabBarController.swift; sourceTree = "<group>"; };
+		EF510CC62599B3A600607F8C /* QYLottieTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYLottieTabBarItemContentView.swift; sourceTree = "<group>"; };
+		EF510CEA2599B41900607F8C /* QYLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYLogger.swift; sourceTree = "<group>"; };
+		EF510CED2599B42E00607F8C /* AppDelegate+Vender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Vender.swift"; sourceTree = "<group>"; };
+		EF510CF22599B51900607F8C /* QYHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYHomeViewModel.swift; sourceTree = "<group>"; };
+		EF510CF42599B51900607F8C /* QYHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYHomeController.swift; sourceTree = "<group>"; };
+		EF510CFA2599B52500607F8C /* QYProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYProductViewModel.swift; sourceTree = "<group>"; };
+		EF510CFC2599B52500607F8C /* QYProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYProductController.swift; sourceTree = "<group>"; };
+		EF510CFF2599B52500607F8C /* QYVideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYVideoViewModel.swift; sourceTree = "<group>"; };
+		EF510D012599B52500607F8C /* QYVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYVideoController.swift; sourceTree = "<group>"; };
+		EF510D042599B52500607F8C /* QYBookShelfViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYBookShelfViewModel.swift; sourceTree = "<group>"; };
+		EF510D062599B52500607F8C /* QYBookShelfController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYBookShelfController.swift; sourceTree = "<group>"; };
+		EF510D092599B52500607F8C /* QYMineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYMineViewModel.swift; sourceTree = "<group>"; };
+		EF510D0B2599B52500607F8C /* QYMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYMineController.swift; sourceTree = "<group>"; };
+		EF510D0E2599B52600607F8C /* QYViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYViewModel.swift; sourceTree = "<group>"; };
+		EF510D102599B52600607F8C /* HLJBaseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLJBaseItem.swift; sourceTree = "<group>"; };
+		EF510D122599B52600607F8C /* QYTableviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYTableviewController.swift; sourceTree = "<group>"; };
+		EF510D132599B52600607F8C /* QYCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYCollectionController.swift; sourceTree = "<group>"; };
+		EF510D142599B52600607F8C /* QYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYViewController.swift; sourceTree = "<group>"; };
+		EF510D162599B52600607F8C /* QYBaseEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYBaseEmptyView.swift; sourceTree = "<group>"; };
+		EF510D662599B5C600607F8C /* QYReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYReachability.swift; sourceTree = "<group>"; };
+		EF510D6A2599B5EF00607F8C /* QYRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYRequest.swift; sourceTree = "<group>"; };
+		EF510D7A2599BF3500607F8C /* tab_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_home.json; sourceTree = "<group>"; };
+		EF510D7B2599BF3500607F8C /* tab_novel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_novel.json; sourceTree = "<group>"; };
+		EF510D7C2599BF3500607F8C /* tab_mine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_mine.json; sourceTree = "<group>"; };
+		EF510D7D2599BF3500607F8C /* tab_product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_product.json; sourceTree = "<group>"; };
+		EF510D7E2599BF3500607F8C /* tab_video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_video.json; sourceTree = "<group>"; };
+		EF510D902599CB5E00607F8C /* AppDelegate+Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Internal.swift"; sourceTree = "<group>"; };
+		EF510D982599DAC500607F8C /* QYShortVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYShortVideo.swift; sourceTree = "<group>"; };
+		EF510D9C2599DAE000607F8C /* QYShortVideoConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYShortVideoConfiguration.swift; sourceTree = "<group>"; };
+		EF510DCE2599DB8A00607F8C /* QYShortVideo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QYShortVideo.bundle; sourceTree = "<group>"; };
+		EF510DD12599DDF900607F8C /* SVNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVNavigationController.swift; sourceTree = "<group>"; };
+		EF510DD42599DEB900607F8C /* SVPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVPickerManager.swift; sourceTree = "<group>"; };
+		EF510DE02599ED1F00607F8C /* QYAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYAlert.swift; sourceTree = "<group>"; };
+		EF5D8BAE259D9A0B007513FB /* QYRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYRefreshFooter.swift; sourceTree = "<group>"; };
+		EF5D8BAF259D9A0B007513FB /* HLJRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLJRefreshHeader.swift; sourceTree = "<group>"; };
+		EF5D8BEB259DBC7C007513FB /* QYGalleryTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryTitleDataSource.swift; sourceTree = "<group>"; };
+		EF5D8BEC259DBC7D007513FB /* QYGalleryTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryTitleCell.swift; sourceTree = "<group>"; };
+		EF5D8BED259DBC7D007513FB /* QYGalleryTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryTitleItemModel.swift; sourceTree = "<group>"; };
+		EF5D8BF3259DBD4E007513FB /* JXPagingListContainerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPagingListContainerViewExtension.swift; sourceTree = "<group>"; };
+		EF5D8BF8259DBDB8007513FB /* MJRefreshComponent+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MJRefreshComponent+Rx.swift"; sourceTree = "<group>"; };
+		EF5D8BF9259DBDB8007513FB /* MJRefreshFooter+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MJRefreshFooter+Rx.swift"; sourceTree = "<group>"; };
+		EF5D8C00259DBE42007513FB /* QYGalleryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListController.swift; sourceTree = "<group>"; };
+		EF5D8C01259DBE42007513FB /* QYGalleryVideoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryVideoListController.swift; sourceTree = "<group>"; };
+		EF5D8C06259DBE5B007513FB /* QYGalleryCategoryItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryItemController.swift; sourceTree = "<group>"; };
+		EF5D8C07259DBE5B007513FB /* QYGalleryDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryDetailController.swift; sourceTree = "<group>"; };
+		EF5D8C08259DBE5B007513FB /* QYGalleryAllCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryController.swift; sourceTree = "<group>"; };
+		EF5D8C0D259DBEB0007513FB /* QYGalleryCategoryListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryListItem.swift; sourceTree = "<group>"; };
+		EF5D8C0E259DBEB0007513FB /* QYGalleryAllCategoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryItem.swift; sourceTree = "<group>"; };
+		EF5D8C0F259DBEB0007513FB /* QYGalleryCategoryMarkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryMarkItem.swift; sourceTree = "<group>"; };
+		EF5D8C10259DBEB0007513FB /* QYGalleryImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryImageItem.swift; sourceTree = "<group>"; };
+		EF5D8C11259DBEB1007513FB /* QYGalleryListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListItem.swift; sourceTree = "<group>"; };
+		EF5D8C12259DBEB1007513FB /* QYGalleryListVideoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListVideoItem.swift; sourceTree = "<group>"; };
+		EF5D8C1B259DBECF007513FB /* QYGalleryListVideoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListVideoLayout.swift; sourceTree = "<group>"; };
+		EF5D8C1C259DBECF007513FB /* QYGalleryListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListLayout.swift; sourceTree = "<group>"; };
+		EF5D8C1D259DBECF007513FB /* QYGalleryDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryDetailViewModel.swift; sourceTree = "<group>"; };
+		EF5D8C1E259DBECF007513FB /* QYGalleryListPosterLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListPosterLayout.swift; sourceTree = "<group>"; };
+		EF5D8C1F259DBECF007513FB /* QYGalleryListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListViewModel.swift; sourceTree = "<group>"; };
+		EF5D8C20259DBECF007513FB /* QYGalleryVideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryVideoViewModel.swift; sourceTree = "<group>"; };
+		EF5D8C21259DBED0007513FB /* QYGalleryCategoryItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryItemViewModel.swift; sourceTree = "<group>"; };
+		EF5D8C22259DBED0007513FB /* QYGalleryAllCategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryViewModel.swift; sourceTree = "<group>"; };
+		EF5D8C2C259DBF07007513FB /* QYGalleryCategoryItemHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryItemHeaderCell.swift; sourceTree = "<group>"; };
+		EF5D8C2D259DBF07007513FB /* QYGalleryListVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListVideoCell.swift; sourceTree = "<group>"; };
+		EF5D8C2E259DBF07007513FB /* QYGalleryAllCategorySectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategorySectionHeaderView.swift; sourceTree = "<group>"; };
+		EF5D8C2F259DBF07007513FB /* QYGalleryAllCategoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryDetailView.swift; sourceTree = "<group>"; };
+		EF5D8C30259DBF07007513FB /* QYGalleryCategoryItemHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryCategoryItemHeaderView.swift; sourceTree = "<group>"; };
+		EF5D8C31259DBF07007513FB /* QYGalleryAllCategoryIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryIndexCell.swift; sourceTree = "<group>"; };
+		EF5D8C32259DBF08007513FB /* QYGalleryAllCategoryDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryDetailCell.swift; sourceTree = "<group>"; };
+		EF5D8C33259DBF08007513FB /* QYGalleryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListCell.swift; sourceTree = "<group>"; };
+		EF5D8C34259DBF08007513FB /* QYGalleryListPosterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryListPosterCell.swift; sourceTree = "<group>"; };
+		EF5D8C35259DBF08007513FB /* QYGalleryAllCategoryIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYGalleryAllCategoryIndexView.swift; sourceTree = "<group>"; };
+		EF5D8CA1259DC034007513FB /* QYInch+Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QYInch+Gallery.swift"; sourceTree = "<group>"; };
+		EF5D8CA6259DC1C4007513FB /* QYCalculateHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYCalculateHelp.swift; sourceTree = "<group>"; };
+		EF5D8CAC259DC24D007513FB /* HLJUserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLJUserItem.swift; sourceTree = "<group>"; };
+		EF5D8CB1259DC4FC007513FB /* QYAnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QYAnimatedImageView.swift; sourceTree = "<group>"; };
+		EF5D8CB5259DC5DC007513FB /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		EFE65A41259ABBEF003799C4 /* QYInsetsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYInsetsLabel.swift; sourceTree = "<group>"; };
+		EFE65A46259ABD1A003799C4 /* QYLaunchAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYLaunchAd.swift; sourceTree = "<group>"; };
+		EFE65ACD259B0F80003799C4 /* QYNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYNotification.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF510ADD2599645B00607F8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D86B72868AEB5D51082347B /* Pods_Qianyu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A63F7DA4ED970FDD598D30E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C36F119F561102E04279A14A /* Pods-Qianyu.debug.xcconfig */,
+				97775A12990B27C9921B90BC /* Pods-Qianyu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8E9B98BC4F22B070A68984F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A98DAA2806676D84C7977C4 /* Pods_Qianyu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF01C29C259C49F40096CB64 /* QYButton */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C29D259C4A010096CB64 /* QYButton.swift */,
+				EF01C2A0259C4A090096CB64 /* QYBorderButton.swift */,
+			);
+			path = QYButton;
+			sourceTree = "<group>";
+		};
+		EF01C2D3259C4DA80096CB64 /* QYColor */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CB7259988DA00607F8C /* QYColor.swift */,
+				EF01C2D5259C4DDA0096CB64 /* QYColor+Home.swift */,
+			);
+			path = QYColor;
+			sourceTree = "<group>";
+		};
+		EF01C2D8259C59F80096CB64 /* QYGallery */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C358259C7C9E0096CB64 /* V */,
+				EF01C32B259C78400096CB64 /* M */,
+				EF01C31A259C60F10096CB64 /* VM */,
+				EF01C2D9259C5A000096CB64 /* C */,
+			);
+			path = QYGallery;
+			sourceTree = "<group>";
+		};
+		EF01C2D9259C5A000096CB64 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8C00259DBE42007513FB /* QYGalleryListController.swift */,
+				EF5D8C01259DBE42007513FB /* QYGalleryVideoListController.swift */,
+				EF01C2DA259C5A1A0096CB64 /* QYGalleryHomeController.swift */,
+				EF5D8C08259DBE5B007513FB /* QYGalleryAllCategoryController.swift */,
+				EF5D8C06259DBE5B007513FB /* QYGalleryCategoryItemController.swift */,
+				EF5D8C07259DBE5B007513FB /* QYGalleryDetailController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF01C31A259C60F10096CB64 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C31B259C60FB0096CB64 /* QYGalleryHomeViewModel.swift */,
+				EF5D8C22259DBED0007513FB /* QYGalleryAllCategoryViewModel.swift */,
+				EF5D8C21259DBED0007513FB /* QYGalleryCategoryItemViewModel.swift */,
+				EF5D8C1D259DBECF007513FB /* QYGalleryDetailViewModel.swift */,
+				EF5D8C1C259DBECF007513FB /* QYGalleryListLayout.swift */,
+				EF5D8C1E259DBECF007513FB /* QYGalleryListPosterLayout.swift */,
+				EF5D8C1B259DBECF007513FB /* QYGalleryListVideoLayout.swift */,
+				EF5D8C1F259DBECF007513FB /* QYGalleryListViewModel.swift */,
+				EF5D8C20259DBECF007513FB /* QYGalleryVideoViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF01C31F259C67D00096CB64 /* hlj */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C323259C68990096CB64 /* Gallery */,
+				EF01C328259C6D9E0096CB64 /* HLJMapHandyJSON.swift */,
+			);
+			path = hlj;
+			sourceTree = "<group>";
+		};
+		EF01C323259C68990096CB64 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C320259C67F30096CB64 /* HLJGalleryApi.swift */,
+				EF01C325259C68B00096CB64 /* HLJGalleryApiPath.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		EF01C32B259C78400096CB64 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C32C259C79690096CB64 /* QYGalleryHomeMarkItem.swift */,
+				EF5D8C0E259DBEB0007513FB /* QYGalleryAllCategoryItem.swift */,
+				EF5D8C0D259DBEB0007513FB /* QYGalleryCategoryListItem.swift */,
+				EF5D8C0F259DBEB0007513FB /* QYGalleryCategoryMarkItem.swift */,
+				EF5D8C10259DBEB0007513FB /* QYGalleryImageItem.swift */,
+				EF5D8C11259DBEB1007513FB /* QYGalleryListItem.swift */,
+				EF5D8C12259DBEB1007513FB /* QYGalleryListVideoItem.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EF01C358259C7C9E0096CB64 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C359259C7CB30096CB64 /* QYGalleryHomeHeaderView.swift */,
+				EF5D8C32259DBF08007513FB /* QYGalleryAllCategoryDetailCell.swift */,
+				EF5D8C2F259DBF07007513FB /* QYGalleryAllCategoryDetailView.swift */,
+				EF5D8C31259DBF07007513FB /* QYGalleryAllCategoryIndexCell.swift */,
+				EF5D8C35259DBF08007513FB /* QYGalleryAllCategoryIndexView.swift */,
+				EF5D8C2E259DBF07007513FB /* QYGalleryAllCategorySectionHeaderView.swift */,
+				EF5D8C2C259DBF07007513FB /* QYGalleryCategoryItemHeaderCell.swift */,
+				EF5D8C30259DBF07007513FB /* QYGalleryCategoryItemHeaderView.swift */,
+				EF5D8C33259DBF08007513FB /* QYGalleryListCell.swift */,
+				EF5D8C34259DBF08007513FB /* QYGalleryListPosterCell.swift */,
+				EF5D8C2D259DBF07007513FB /* QYGalleryListVideoCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EF510AD72599645B00607F8C = {
+			isa = PBXGroup;
+			children = (
+				EF510AE22599645B00607F8C /* Qianyu */,
+				EF510AE12599645B00607F8C /* Products */,
+				8A63F7DA4ED970FDD598D30E /* Pods */,
+				C8E9B98BC4F22B070A68984F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF510AE12599645B00607F8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF510AE02599645B00607F8C /* Qianyu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF510AE22599645B00607F8C /* Qianyu */ = {
+			isa = PBXGroup;
+			children = (
+				EF510AE72599645B00607F8C /* ViewController.swift */,
+				EF510C2E2599835600607F8C /* Application */,
+				EF510C2D2599834B00607F8C /* Classes */,
+				EF510C2C2599834200607F8C /* Util */,
+				EF510B1A25996CF900607F8C /* Configs */,
+				EF510C2B2599833700607F8C /* Common */,
+				EF510C2A2599832D00607F8C /* Extension */,
+				EF510BFC2599831200607F8C /* Vender */,
+				EF510B1425996C6A00607F8C /* Resources */,
+			);
+			path = Qianyu;
+			sourceTree = "<group>";
+		};
+		EF510B1425996C6A00607F8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D792599BF0A00607F8C /* tab_json */,
+				EF510BDA259970E000607F8C /* R.generated.swift */,
+				EF510AE92599645B00607F8C /* Main.storyboard */,
+				EF510AEC2599645C00607F8C /* Assets.xcassets */,
+				EF510AEE2599645C00607F8C /* LaunchScreen.storyboard */,
+				EF510AF12599645C00607F8C /* Info.plist */,
+				EF510B7F25996DD500607F8C /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF510B1A25996CF900607F8C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C317259C5FCE0096CB64 /* QYConfigs.swift */,
+				EF510B1B25996D0500607F8C /* QYHeaders.swift */,
+				EF01C2D3259C4DA80096CB64 /* QYColor */,
+				EF510CB9259988DB00607F8C /* QYFont.swift */,
+				EF5D8CA0259DC013007513FB /* QYInch */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		EF510BFC2599831200607F8C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CB4259DC5DC007513FB /* CHTCollectionViewWaterfallLayout */,
+				EF510C77259985FA00607F8C /* EmptyDataSet-Custom */,
+				EF510C7D259985FA00607F8C /* RxErrorTracker */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		EF510C2A2599832D00607F8C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C2F2599845800607F8C /* QianyuWrapper.swift */,
+				EF5D8BF2259DBD42007513FB /* Internal */,
+				EF510C41259984B000607F8C /* ReusableView */,
+				EF510C39259984B000607F8C /* Rx */,
+				EF510C3C259984B000607F8C /* Stdlib */,
+				EF510C33259984B000607F8C /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF510C2B2599833700607F8C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CAA259DC235007513FB /* HLJBase */,
+				EF01C2D8259C59F80096CB64 /* QYGallery */,
+				EFE65AC9259B0BE3003799C4 /* QYReader */,
+				EF510D952599DA9400607F8C /* QYShortVideo */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF510C2C2599834200607F8C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CB0259DC4F1007513FB /* QYAnimatedImageView */,
+				EF5D8CA5259DC1BB007513FB /* Help */,
+				EF5D8BEA259DBC59007513FB /* QYGalleryHomeSegmentedView */,
+				EF5D8BAD259D99FA007513FB /* QYRefresh */,
+				EF01C29C259C49F40096CB64 /* QYButton */,
+				EFE65B52259B33A2003799C4 /* QYRouter */,
+				EFE65ACC259B0F74003799C4 /* QYNotification */,
+				EFE65A45259ABD0E003799C4 /* QYLaunchAd */,
+				EFE65A40259ABBD5003799C4 /* QYLabel */,
+				EF510DDF2599ED1100607F8C /* QYAlert */,
+				EF510D692599B5DC00607F8C /* API */,
+				EF510D652599B5C600607F8C /* Reachability */,
+				EF510CE92599B41900607F8C /* Logger */,
+				EF510C9E2599885D00607F8C /* QYToast */,
+				EF510C862599861500607F8C /* QYHUD */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EF510C2D2599834B00607F8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D0C2599B52600607F8C /* Base */,
+				EF510D022599B52500607F8C /* Bookshelf */,
+				EF510D072599B52500607F8C /* Mine */,
+				EF510CF82599B52500607F8C /* Product */,
+				EF510CFD2599B52500607F8C /* Video */,
+				EF510CF02599B51900607F8C /* Home */,
+				EF510CC12599B3A600607F8C /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF510C2E2599835600607F8C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EF510AE32599645B00607F8C /* AppDelegate.swift */,
+				EF510CED2599B42E00607F8C /* AppDelegate+Vender.swift */,
+				EF510D902599CB5E00607F8C /* AppDelegate+Internal.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EF510C33259984B000607F8C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C34259984B000607F8C /* UIViewControllerExtensions.swift */,
+				EF01C2D0259C4C2D0096CB64 /* CALayerExetnsions.swift */,
+				EF510C35259984B000607F8C /* UIImageExtensions.swift */,
+				EF510C36259984B000607F8C /* UIViewExtensions.swift */,
+				EF510C37259984B000607F8C /* UIButtonExtensions.swift */,
+				EF510C38259984B000607F8C /* UIColorExtensions.swift */,
+				EF01C387259C8FCE0096CB64 /* UIImageViewExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EF510C39259984B000607F8C /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8BF7259DBDB8007513FB /* MJRefresh+Rx */,
+				EF510C3A259984B000607F8C /* RxProperty.swift */,
+				EF510C3B259984B000607F8C /* ObservableExtensions.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		EF510C3C259984B000607F8C /* Stdlib */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C3D259984B000607F8C /* CGRectExtensions.swift */,
+				EF510C3E259984B000607F8C /* CGFloatExtensions.swift */,
+				EF510C3F259984B000607F8C /* StringExtensions.swift */,
+				EF510C40259984B000607F8C /* DoubleExtensions.swift */,
+				EF01C2CA259C4A9F0096CB64 /* UIEdgeInsetsExtensions.swift */,
+				EF01C2CD259C4B0D0096CB64 /* CGSizeExtensions.swift */,
+			);
+			path = Stdlib;
+			sourceTree = "<group>";
+		};
+		EF510C41259984B000607F8C /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C42259984B000607F8C /* UITableView+ReusableView.swift */,
+				EF510C43259984B000607F8C /* UICollectionView+ReusableView.swift */,
+				EF510C44259984B000607F8C /* ReusableView.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		EF510C77259985FA00607F8C /* EmptyDataSet-Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C78259985FA00607F8C /* EmptyDataSetView.swift */,
+				EF510C79259985FA00607F8C /* EmptyDataSetView+Extension.swift */,
+				EF510C7A259985FA00607F8C /* EmptyDataSetSource.swift */,
+				EF510C7B259985FA00607F8C /* EmptyDataSetDelegate.swift */,
+				EF510C7C259985FA00607F8C /* EmptyDataSet.swift */,
+			);
+			path = "EmptyDataSet-Custom";
+			sourceTree = "<group>";
+		};
+		EF510C7D259985FA00607F8C /* RxErrorTracker */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C7E259985FA00607F8C /* ErrorTracker.swift */,
+			);
+			path = RxErrorTracker;
+			sourceTree = "<group>";
+		};
+		EF510C862599861500607F8C /* QYHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C872599862D00607F8C /* QYHUD.swift */,
+			);
+			path = QYHUD;
+			sourceTree = "<group>";
+		};
+		EF510C9E2599885D00607F8C /* QYToast */ = {
+			isa = PBXGroup;
+			children = (
+				EF510C9F2599886300607F8C /* QYToast.swift */,
+			);
+			path = QYToast;
+			sourceTree = "<group>";
+		};
+		EF510CC12599B3A600607F8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CC22599B3A600607F8C /* C */,
+				EF510CC52599B3A600607F8C /* V */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF510CC22599B3A600607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CC32599B3A600607F8C /* QYNavigationController.swift */,
+				EF510CC42599B3A600607F8C /* QYTabBarController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510CC52599B3A600607F8C /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CC62599B3A600607F8C /* QYLottieTabBarItemContentView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EF510CE92599B41900607F8C /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CEA2599B41900607F8C /* QYLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		EF510CF02599B51900607F8C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CF12599B51900607F8C /* VM */,
+				EF510CF32599B51900607F8C /* C */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF510CF12599B51900607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CF22599B51900607F8C /* QYHomeViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510CF32599B51900607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CF42599B51900607F8C /* QYHomeController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510CF82599B52500607F8C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CF92599B52500607F8C /* VM */,
+				EF510CFB2599B52500607F8C /* C */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		EF510CF92599B52500607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CFA2599B52500607F8C /* QYProductViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510CFB2599B52500607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CFC2599B52500607F8C /* QYProductController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510CFD2599B52500607F8C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CFE2599B52500607F8C /* VM */,
+				EF510D002599B52500607F8C /* C */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		EF510CFE2599B52500607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CFF2599B52500607F8C /* QYVideoViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510D002599B52500607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D012599B52500607F8C /* QYVideoController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510D022599B52500607F8C /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D032599B52500607F8C /* VM */,
+				EF510D052599B52500607F8C /* C */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		EF510D032599B52500607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D042599B52500607F8C /* QYBookShelfViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510D052599B52500607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D062599B52500607F8C /* QYBookShelfController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510D072599B52500607F8C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D082599B52500607F8C /* VM */,
+				EF510D0A2599B52500607F8C /* C */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		EF510D082599B52500607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D092599B52500607F8C /* QYMineViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510D0A2599B52500607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D0B2599B52500607F8C /* QYMineController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510D0C2599B52600607F8C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D0D2599B52600607F8C /* VM */,
+				EF510D0F2599B52600607F8C /* M */,
+				EF510D112599B52600607F8C /* C */,
+				EF510D152599B52600607F8C /* V */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF510D0D2599B52600607F8C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D0E2599B52600607F8C /* QYViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EF510D0F2599B52600607F8C /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D102599B52600607F8C /* HLJBaseItem.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EF510D112599B52600607F8C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D122599B52600607F8C /* QYTableviewController.swift */,
+				EF510D132599B52600607F8C /* QYCollectionController.swift */,
+				EF510D142599B52600607F8C /* QYViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EF510D152599B52600607F8C /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D162599B52600607F8C /* QYBaseEmptyView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EF510D652599B5C600607F8C /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D662599B5C600607F8C /* QYReachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		EF510D692599B5DC00607F8C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D6A2599B5EF00607F8C /* QYRequest.swift */,
+				EF01C31F259C67D00096CB64 /* hlj */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EF510D792599BF0A00607F8C /* tab_json */ = {
+			isa = PBXGroup;
+			children = (
+				EF510D7A2599BF3500607F8C /* tab_home.json */,
+				EF510D7C2599BF3500607F8C /* tab_mine.json */,
+				EF510D7B2599BF3500607F8C /* tab_novel.json */,
+				EF510D7D2599BF3500607F8C /* tab_product.json */,
+				EF510D7E2599BF3500607F8C /* tab_video.json */,
+			);
+			path = tab_json;
+			sourceTree = "<group>";
+		};
+		EF510D952599DA9400607F8C /* QYShortVideo */ = {
+			isa = PBXGroup;
+			children = (
+				EF510DCC2599DB6E00607F8C /* Resources */,
+				EF510D972599DAA800607F8C /* Picker */,
+				EF510D962599DAA000607F8C /* Help */,
+				EF510D982599DAC500607F8C /* QYShortVideo.swift */,
+				EF510D9C2599DAE000607F8C /* QYShortVideoConfiguration.swift */,
+				EF510DD12599DDF900607F8C /* SVNavigationController.swift */,
+			);
+			path = QYShortVideo;
+			sourceTree = "<group>";
+		};
+		EF510D962599DAA000607F8C /* Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		EF510D972599DAA800607F8C /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				EF510DD42599DEB900607F8C /* SVPickerManager.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		EF510DCC2599DB6E00607F8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF510DCE2599DB8A00607F8C /* QYShortVideo.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF510DDF2599ED1100607F8C /* QYAlert */ = {
+			isa = PBXGroup;
+			children = (
+				EF510DE02599ED1F00607F8C /* QYAlert.swift */,
+				EFE65A6C259AC41E003799C4 /* UI */,
+			);
+			path = QYAlert;
+			sourceTree = "<group>";
+		};
+		EF5D8BAD259D99FA007513FB /* QYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8BAF259D9A0B007513FB /* HLJRefreshHeader.swift */,
+				EF5D8BAE259D9A0B007513FB /* QYRefreshFooter.swift */,
+			);
+			path = QYRefresh;
+			sourceTree = "<group>";
+		};
+		EF5D8BEA259DBC59007513FB /* QYGalleryHomeSegmentedView */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8BEC259DBC7D007513FB /* QYGalleryTitleCell.swift */,
+				EF5D8BEB259DBC7C007513FB /* QYGalleryTitleDataSource.swift */,
+				EF5D8BED259DBC7D007513FB /* QYGalleryTitleItemModel.swift */,
+			);
+			path = QYGalleryHomeSegmentedView;
+			sourceTree = "<group>";
+		};
+		EF5D8BF2259DBD42007513FB /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8BF3259DBD4E007513FB /* JXPagingListContainerViewExtension.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		EF5D8BF7259DBDB8007513FB /* MJRefresh+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8BF8259DBDB8007513FB /* MJRefreshComponent+Rx.swift */,
+				EF5D8BF9259DBDB8007513FB /* MJRefreshFooter+Rx.swift */,
+			);
+			path = "MJRefresh+Rx";
+			sourceTree = "<group>";
+		};
+		EF5D8CA0259DC013007513FB /* QYInch */ = {
+			isa = PBXGroup;
+			children = (
+				EF510CB8259988DA00607F8C /* QYInch.swift */,
+				EF5D8CA1259DC034007513FB /* QYInch+Gallery.swift */,
+			);
+			path = QYInch;
+			sourceTree = "<group>";
+		};
+		EF5D8CA5259DC1BB007513FB /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CA6259DC1C4007513FB /* QYCalculateHelp.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		EF5D8CAA259DC235007513FB /* HLJBase */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CAB259DC23E007513FB /* M */,
+			);
+			path = HLJBase;
+			sourceTree = "<group>";
+		};
+		EF5D8CAB259DC23E007513FB /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CAC259DC24D007513FB /* HLJUserItem.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EF5D8CB0259DC4F1007513FB /* QYAnimatedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CB1259DC4FC007513FB /* QYAnimatedImageView.swift */,
+			);
+			path = QYAnimatedImageView;
+			sourceTree = "<group>";
+		};
+		EF5D8CB4259DC5DC007513FB /* CHTCollectionViewWaterfallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EF5D8CB5259DC5DC007513FB /* CHTCollectionViewWaterfallLayout.swift */,
+			);
+			path = CHTCollectionViewWaterfallLayout;
+			sourceTree = "<group>";
+		};
+		EFE65A40259ABBD5003799C4 /* QYLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EFE65A41259ABBEF003799C4 /* QYInsetsLabel.swift */,
+			);
+			path = QYLabel;
+			sourceTree = "<group>";
+		};
+		EFE65A45259ABD0E003799C4 /* QYLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				EFE65A46259ABD1A003799C4 /* QYLaunchAd.swift */,
+			);
+			path = QYLaunchAd;
+			sourceTree = "<group>";
+		};
+		EFE65A6C259AC41E003799C4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EFE65AC9259B0BE3003799C4 /* QYReader */ = {
+			isa = PBXGroup;
+			children = (
+				EFE65ACA259B0BEF003799C4 /* C */,
+			);
+			path = QYReader;
+			sourceTree = "<group>";
+		};
+		EFE65ACA259B0BEF003799C4 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EFE65ACC259B0F74003799C4 /* QYNotification */ = {
+			isa = PBXGroup;
+			children = (
+				EFE65ACD259B0F80003799C4 /* QYNotification.swift */,
+			);
+			path = QYNotification;
+			sourceTree = "<group>";
+		};
+		EFE65B52259B33A2003799C4 /* QYRouter */ = {
+			isa = PBXGroup;
+			children = (
+				EF01C2DE259C5A3F0096CB64 /* QYRouter.swift */,
+				EF01C30E259C5DB00096CB64 /* QYRouterInternal.swift */,
+				EF01C311259C5E1D0096CB64 /* QYRouterExternal.swift */,
+			);
+			path = QYRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF510ADF2599645B00607F8C /* Qianyu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF510AF42599645C00607F8C /* Build configuration list for PBXNativeTarget "Qianyu" */;
+			buildPhases = (
+				4E92DF4F5686BBB9F3362FDC /* [CP] Check Pods Manifest.lock */,
+				EF510BD325996EF800607F8C /* R.swift */,
+				EF510ADC2599645B00607F8C /* Sources */,
+				EF510ADD2599645B00607F8C /* Frameworks */,
+				EF510ADE2599645B00607F8C /* Resources */,
+				BF70F3494CAAABCBE67E2000 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qianyu;
+			productName = Qianyu;
+			productReference = EF510AE02599645B00607F8C /* Qianyu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF510AD82599645B00607F8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					EF510ADF2599645B00607F8C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = EF510ADB2599645B00607F8C /* Build configuration list for PBXProject "Qianyu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = EF510AD72599645B00607F8C;
+			productRefGroup = EF510AE12599645B00607F8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF510ADF2599645B00607F8C /* Qianyu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF510ADE2599645B00607F8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF510DCF2599DB8A00607F8C /* QYShortVideo.bundle in Resources */,
+				EF510D802599BF3500607F8C /* tab_novel.json in Resources */,
+				EF510D812599BF3500607F8C /* tab_mine.json in Resources */,
+				EF510AF02599645C00607F8C /* LaunchScreen.storyboard in Resources */,
+				EF510B7D25996DD500607F8C /* Localizable.strings in Resources */,
+				EF510AED2599645C00607F8C /* Assets.xcassets in Resources */,
+				EF510D7F2599BF3500607F8C /* tab_home.json in Resources */,
+				EF510AEB2599645B00607F8C /* Main.storyboard in Resources */,
+				EF510D822599BF3500607F8C /* tab_product.json in Resources */,
+				EF510D832599BF3500607F8C /* tab_video.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E92DF4F5686BBB9F3362FDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qianyu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF70F3494CAAABCBE67E2000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qianyu/Pods-Qianyu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qianyu/Pods-Qianyu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qianyu/Pods-Qianyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF510BD325996EF800607F8C /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Qianyu/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Qianyu/Resources/R.generated.swift\" --generators image,string\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF510ADC2599645B00607F8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF510D1C2599B52600607F8C /* QYBookShelfController.swift in Sources */,
+				EF5D8C0A259DBE5B007513FB /* QYGalleryDetailController.swift in Sources */,
+				EF5D8C39259DBF08007513FB /* QYGalleryAllCategoryDetailView.swift in Sources */,
+				EF5D8C38259DBF08007513FB /* QYGalleryAllCategorySectionHeaderView.swift in Sources */,
+				EF510CBC259988DB00607F8C /* QYFont.swift in Sources */,
+				EF01C329259C6D9E0096CB64 /* HLJMapHandyJSON.swift in Sources */,
+				EF01C2DF259C5A3F0096CB64 /* QYRouter.swift in Sources */,
+				EF5D8C16259DBEB1007513FB /* QYGalleryImageItem.swift in Sources */,
+				EF5D8C09259DBE5B007513FB /* QYGalleryCategoryItemController.swift in Sources */,
+				EF01C30F259C5DB00096CB64 /* QYRouterInternal.swift in Sources */,
+				EF510DD52599DEB900607F8C /* SVPickerManager.swift in Sources */,
+				EF510C302599845800607F8C /* QianyuWrapper.swift in Sources */,
+				EF01C2D1259C4C2D0096CB64 /* CALayerExetnsions.swift in Sources */,
+				EF510D222599B52600607F8C /* QYCollectionController.swift in Sources */,
+				EF01C35A259C7CB30096CB64 /* QYGalleryHomeHeaderView.swift in Sources */,
+				EF01C318259C5FCE0096CB64 /* QYConfigs.swift in Sources */,
+				EF5D8CAD259DC24D007513FB /* HLJUserItem.swift in Sources */,
+				EF510CF62599B51900607F8C /* QYHomeController.swift in Sources */,
+				EF510D182599B52600607F8C /* QYProductController.swift in Sources */,
+				EF5D8C25259DBED0007513FB /* QYGalleryDetailViewModel.swift in Sources */,
+				EF5D8C03259DBE42007513FB /* QYGalleryVideoListController.swift in Sources */,
+				EF5D8C29259DBED0007513FB /* QYGalleryCategoryItemViewModel.swift in Sources */,
+				EF5D8C3F259DBF08007513FB /* QYGalleryAllCategoryIndexView.swift in Sources */,
+				EF510C81259985FA00607F8C /* EmptyDataSetSource.swift in Sources */,
+				EF5D8BFA259DBDB8007513FB /* MJRefreshComponent+Rx.swift in Sources */,
+				EF01C32D259C79690096CB64 /* QYGalleryHomeMarkItem.swift in Sources */,
+				EFE65ACE259B0F80003799C4 /* QYNotification.swift in Sources */,
+				EF510C83259985FA00607F8C /* EmptyDataSet.swift in Sources */,
+				EF5D8C3B259DBF08007513FB /* QYGalleryAllCategoryIndexCell.swift in Sources */,
+				EF5D8BFB259DBDB8007513FB /* MJRefreshFooter+Rx.swift in Sources */,
+				EF5D8C3A259DBF08007513FB /* QYGalleryCategoryItemHeaderView.swift in Sources */,
+				EF5D8BF4259DBD4E007513FB /* JXPagingListContainerViewExtension.swift in Sources */,
+				EF510C882599862D00607F8C /* QYHUD.swift in Sources */,
+				EF01C388259C8FCE0096CB64 /* UIImageViewExtensions.swift in Sources */,
+				EF5D8C3D259DBF08007513FB /* QYGalleryListCell.swift in Sources */,
+				EF510C82259985FA00607F8C /* EmptyDataSetDelegate.swift in Sources */,
+				EF510AE82599645B00607F8C /* ViewController.swift in Sources */,
+				EF510C47259984B000607F8C /* UIViewExtensions.swift in Sources */,
+				EF5D8C13259DBEB1007513FB /* QYGalleryCategoryListItem.swift in Sources */,
+				EF510C46259984B000607F8C /* UIImageExtensions.swift in Sources */,
+				EF510DE12599ED1F00607F8C /* QYAlert.swift in Sources */,
+				EF5D8C14259DBEB1007513FB /* QYGalleryAllCategoryItem.swift in Sources */,
+				EF510CC72599B3A600607F8C /* QYNavigationController.swift in Sources */,
+				EF5D8C37259DBF08007513FB /* QYGalleryListVideoCell.swift in Sources */,
+				EF510C51259984B000607F8C /* UICollectionView+ReusableView.swift in Sources */,
+				EF510CF52599B51900607F8C /* QYHomeViewModel.swift in Sources */,
+				EF01C29E259C4A010096CB64 /* QYButton.swift in Sources */,
+				EF5D8C26259DBED0007513FB /* QYGalleryListPosterLayout.swift in Sources */,
+				EF510D192599B52600607F8C /* QYVideoViewModel.swift in Sources */,
+				EF5D8CA7259DC1C4007513FB /* QYCalculateHelp.swift in Sources */,
+				EF510C50259984B000607F8C /* UITableView+ReusableView.swift in Sources */,
+				EF01C2CE259C4B0D0096CB64 /* CGSizeExtensions.swift in Sources */,
+				EF510CC92599B3A600607F8C /* QYLottieTabBarItemContentView.swift in Sources */,
+				EF510AE42599645B00607F8C /* AppDelegate.swift in Sources */,
+				EF510CC82599B3A600607F8C /* QYTabBarController.swift in Sources */,
+				EF510CA02599886300607F8C /* QYToast.swift in Sources */,
+				EF510B1C25996D0500607F8C /* QYHeaders.swift in Sources */,
+				EF5D8CB2259DC4FD007513FB /* QYAnimatedImageView.swift in Sources */,
+				EF510C4D259984B000607F8C /* CGFloatExtensions.swift in Sources */,
+				EF5D8C2A259DBED0007513FB /* QYGalleryAllCategoryViewModel.swift in Sources */,
+				EFE65A42259ABBEF003799C4 /* QYInsetsLabel.swift in Sources */,
+				EF5D8C28259DBED0007513FB /* QYGalleryVideoViewModel.swift in Sources */,
+				EF510D212599B52600607F8C /* QYTableviewController.swift in Sources */,
+				EF5D8C23259DBED0007513FB /* QYGalleryListVideoLayout.swift in Sources */,
+				EF510D202599B52600607F8C /* HLJBaseItem.swift in Sources */,
+				EF510D6B2599B5EF00607F8C /* QYRequest.swift in Sources */,
+				EF510D1B2599B52600607F8C /* QYBookShelfViewModel.swift in Sources */,
+				EF510D242599B52600607F8C /* QYBaseEmptyView.swift in Sources */,
+				EF510C4C259984B000607F8C /* CGRectExtensions.swift in Sources */,
+				EF510C4B259984B000607F8C /* ObservableExtensions.swift in Sources */,
+				EF510D172599B52600607F8C /* QYProductViewModel.swift in Sources */,
+				EF510D1E2599B52600607F8C /* QYMineController.swift in Sources */,
+				EF510C84259985FA00607F8C /* ErrorTracker.swift in Sources */,
+				EF510C48259984B000607F8C /* UIButtonExtensions.swift in Sources */,
+				EF510D9D2599DAE000607F8C /* QYShortVideoConfiguration.swift in Sources */,
+				EF5D8BB1259D9A0B007513FB /* HLJRefreshHeader.swift in Sources */,
+				EF510C4A259984B000607F8C /* RxProperty.swift in Sources */,
+				EF510C45259984B000607F8C /* UIViewControllerExtensions.swift in Sources */,
+				EF5D8C3C259DBF08007513FB /* QYGalleryAllCategoryDetailCell.swift in Sources */,
+				EF01C2DB259C5A1A0096CB64 /* QYGalleryHomeController.swift in Sources */,
+				EF5D8BB0259D9A0B007513FB /* QYRefreshFooter.swift in Sources */,
+				EF510D912599CB5E00607F8C /* AppDelegate+Internal.swift in Sources */,
+				EF510D1F2599B52600607F8C /* QYViewModel.swift in Sources */,
+				EF01C326259C68B00096CB64 /* HLJGalleryApiPath.swift in Sources */,
+				EF5D8BEF259DBC7D007513FB /* QYGalleryTitleCell.swift in Sources */,
+				EF5D8BF0259DBC7D007513FB /* QYGalleryTitleItemModel.swift in Sources */,
+				EF5D8C17259DBEB1007513FB /* QYGalleryListItem.swift in Sources */,
+				EF5D8C15259DBEB1007513FB /* QYGalleryCategoryMarkItem.swift in Sources */,
+				EF510D232599B52600607F8C /* QYViewController.swift in Sources */,
+				EF01C31C259C60FB0096CB64 /* QYGalleryHomeViewModel.swift in Sources */,
+				EF510CBB259988DB00607F8C /* QYInch.swift in Sources */,
+				EF510C52259984B000607F8C /* ReusableView.swift in Sources */,
+				EF01C2D6259C4DDA0096CB64 /* QYColor+Home.swift in Sources */,
+				EF5D8CB6259DC5DC007513FB /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				EF510CBA259988DB00607F8C /* QYColor.swift in Sources */,
+				EF01C312259C5E1D0096CB64 /* QYRouterExternal.swift in Sources */,
+				EF5D8C27259DBED0007513FB /* QYGalleryListViewModel.swift in Sources */,
+				EF5D8C0B259DBE5B007513FB /* QYGalleryAllCategoryController.swift in Sources */,
+				EF510C4F259984B000607F8C /* DoubleExtensions.swift in Sources */,
+				EF510CEE2599B42E00607F8C /* AppDelegate+Vender.swift in Sources */,
+				EF5D8C3E259DBF08007513FB /* QYGalleryListPosterCell.swift in Sources */,
+				EF01C2A1259C4A090096CB64 /* QYBorderButton.swift in Sources */,
+				EF510C4E259984B000607F8C /* StringExtensions.swift in Sources */,
+				EF01C2CB259C4A9F0096CB64 /* UIEdgeInsetsExtensions.swift in Sources */,
+				EF510D992599DAC500607F8C /* QYShortVideo.swift in Sources */,
+				EF510D1A2599B52600607F8C /* QYVideoController.swift in Sources */,
+				EF5D8CA2259DC034007513FB /* QYInch+Gallery.swift in Sources */,
+				EF510C80259985FA00607F8C /* EmptyDataSetView+Extension.swift in Sources */,
+				EF510DD22599DDF900607F8C /* SVNavigationController.swift in Sources */,
+				EF01C321259C67F30096CB64 /* HLJGalleryApi.swift in Sources */,
+				EF510C7F259985FA00607F8C /* EmptyDataSetView.swift in Sources */,
+				EF510CEB2599B41900607F8C /* QYLogger.swift in Sources */,
+				EF5D8C24259DBED0007513FB /* QYGalleryListLayout.swift in Sources */,
+				EF510BDB259970E000607F8C /* R.generated.swift in Sources */,
+				EF510C49259984B000607F8C /* UIColorExtensions.swift in Sources */,
+				EF5D8C02259DBE42007513FB /* QYGalleryListController.swift in Sources */,
+				EF5D8BEE259DBC7D007513FB /* QYGalleryTitleDataSource.swift in Sources */,
+				EF510D672599B5C600607F8C /* QYReachability.swift in Sources */,
+				EF5D8C36259DBF08007513FB /* QYGalleryCategoryItemHeaderCell.swift in Sources */,
+				EFE65A47259ABD1A003799C4 /* QYLaunchAd.swift in Sources */,
+				EF5D8C18259DBEB1007513FB /* QYGalleryListVideoItem.swift in Sources */,
+				EF510D1D2599B52600607F8C /* QYMineViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF510AE92599645B00607F8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF510AEA2599645B00607F8C /* Base */,
+				EF510B1E25996D9100607F8C /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF510AEE2599645C00607F8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF510AEF2599645C00607F8C /* Base */,
+				EF510B1F25996D9100607F8C /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF510B7F25996DD500607F8C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF510B7E25996DD500607F8C /* en */,
+				EF510B8025996DDA00607F8C /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF510AF22599645C00607F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF510AF32599645C00607F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF510AF52599645C00607F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36F119F561102E04279A14A /* Pods-Qianyu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9W33GSKZVH;
+				INFOPLIST_FILE = "/Users/lipengyuan/Downloads/Git下载/自己写的/Qianyu/Qianyu/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QianYu.Kit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RGenericId_dev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF510AF62599645C00607F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97775A12990B27C9921B90BC /* Pods-Qianyu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9W33GSKZVH;
+				INFOPLIST_FILE = "/Users/lipengyuan/Downloads/Git下载/自己写的/Qianyu/Qianyu/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QianYu.Kit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RGenericId_dev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF510ADB2599645B00607F8C /* Build configuration list for PBXProject "Qianyu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF510AF22599645C00607F8C /* Debug */,
+				EF510AF32599645C00607F8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF510AF42599645C00607F8C /* Build configuration list for PBXNativeTarget "Qianyu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF510AF52599645C00607F8C /* Debug */,
+				EF510AF62599645C00607F8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF510AD82599645B00607F8C /* Project object */;
+}

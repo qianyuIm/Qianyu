@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Qianyu
+
+  Created by cyd on 2020/12/28.
+  
+*/
+// tabbar
+"tab_home" = "home";
+"tab_bookShelf" = "bookShelf";
+"tab_product" = "product";
+"tab_video" = "video";
+"tab_mine" = "mine";
+// empty
+"empty_title" = "data is empty";
+"empty_describe" = "please try again";
+"empty_networkTitle" = "unable to connect to network";
+"empty_networkDescribe" = "Please check your network";
+// bookSelf
+"empty_bookSelf_title" = "the shelves are empty";
+"empty_bookSelf_describe" = "go and fill the shelves with good books!";
