@@ -18,7 +18,7 @@ class QYGalleryAllCategoryDetailCell: UICollectionViewCell {
         let label = UILabel()
         label.textAlignment = .center
         label.font = QYFont.fontSemibold(12)
-        label.textColor = QYColor.color000
+        label.textColor = QYColor.blackColor
         return label
     }()
     override init(frame: CGRect) {

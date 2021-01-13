@@ -78,6 +78,11 @@ PODS:
   - XHLaunchAd (3.9.12):
     - FLAnimatedImage (~> 1.0.12)
   - YYText (1.0.7)
+  - ZFPlayer/AVPlayer (4.0.1):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (4.0.1):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (4.0.1)
 
 DEPENDENCIES:
   - AutoInch (~> 2.1.0)
@@ -93,7 +98,7 @@ DEPENDENCIES:
   - JXPagingView/Paging (~> 2.0.13)
   - JXSegmentedView (~> 1.2.7)
   - lottie-ios (~> 3.1.9)
-  - MBProgressHUD
+  - MBProgressHUD (~> 1.2.0)
   - MJRefresh (~> 3.4.3)
   - MLeaksFinder
   - Moya/RxSwift (~> 14.0.0)
@@ -115,6 +120,8 @@ DEPENDENCIES:
   - URLNavigator (~> 2.3.0)
   - XHLaunchAd (~> 3.9.12)
   - YYText (~> 1.0.7)
+  - ZFPlayer/AVPlayer (~> 4.0.1)
+  - ZFPlayer/ControlView
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -164,6 +171,7 @@ SPEC REPOS:
     - URLNavigator
     - XHLaunchAd
     - YYText
+    - ZFPlayer
 
 EXTERNAL SOURCES:
   Toaster:
@@ -223,7 +231,8 @@ SPEC CHECKSUMS:
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
   XHLaunchAd: 6320f9c68732667323072fc3a5f104e40fbe9cfe
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZFPlayer: f88787c815f7b0801279c42f131a89e2823e669e
 
-PODFILE CHECKSUM: cb894477de3782305564eb0d581387a2dfb6e3a9
+PODFILE CHECKSUM: 03ef25cee7ca2dbb42024606f491ac342297e13d
 
 COCOAPODS: 1.10.0

@@ -40,7 +40,8 @@ private extension AppDelegate {
                                              "FLEXNavigationController",
                                              "FLEXObjectExplorerViewController",
                                              "FLEXTableView",
-                                             "FLEXScopeCarousel"])
+                                             "FLEXScopeCarousel",
+                                             "FLEXHierarchyViewController"])
         #endif
     }
     func setupFLEX() {

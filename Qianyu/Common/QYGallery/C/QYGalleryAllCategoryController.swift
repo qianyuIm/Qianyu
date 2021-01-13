@@ -64,9 +64,9 @@ class QYGalleryAllCategoryController: QYViewController {
         
         self.isLoading.subscribe(onNext: {[weak self] (isLoading) in
             if isLoading {
-                QYHUD.showHUD()
+                QYHUD.showHUD(in: self?.view)
             } else {
-                QYHUD.dismiss()
+                QYHUD.dismiss(on: self?.view)
             }
         }).disposed(by: rx.disposeBag)
     }

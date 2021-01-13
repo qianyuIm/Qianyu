@@ -22,7 +22,11 @@ class QYLaunchAd: NSObject {
     fileprivate func launchImageAdConfig(url: String?) {
         guard let url = url else { return  }
         let adConfig = XHLaunchImageAdConfiguration()
+        #if DEBUG
+        adConfig.duration = 1
+        #else
         adConfig.duration = 5
+        #endif
         adConfig.frame = UIScreen.main.bounds
         adConfig.imageNameOrURLString = url
         adConfig.imageOption = .cacheInBackground

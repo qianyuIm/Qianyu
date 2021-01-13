@@ -24,15 +24,25 @@ enum HLJGalleryApi {
     case galleryRankingDetail(Int, Int, Int, Int)
     /// 正常详情
     case galleryNormalDetail(Int,Int,Int,Int,Int)
-    
+    /// 视频推荐页面
+    case galleryVideoRecommended(Int?)
+    /// 备婚达人 -> 热门达人
+    case videoRecommendedTopTalent(Int, Int)
+    /// 备婚达人 -> 热门话题
+    case videoRecommendedTopTopic(Int, Int)
+    /// 备婚达人 -> 详情
+//    case creatorDetails(Int, Int, Int)
 }
 
 extension HLJGalleryApi: TargetType {
     var baseURL: URL {
         switch self {
         case .galleryNormalDetail, .galleryRankingDetail,
-             .galleryHomeVideoRecommend:
+             .galleryHomeVideoRecommend, .galleryVideoRecommended,
+             .videoRecommendedTopTopic:
             return "https://phpapi.hunliji.com".ext.url!
+        case .videoRecommendedTopTalent:
+            return "https://api.hunliji.com".ext.url!
         default:
             return "https://www.hunliji.com".ext.url!
         }
@@ -55,7 +65,14 @@ extension HLJGalleryApi: TargetType {
         case .galleryRankingDetail:
             return HLJGalleryApiPath.galleryRankingDetailPath
         case .galleryNormalDetail:
-            return HLJGalleryApiPath.galleryNormalDetail
+            return HLJGalleryApiPath.galleryNormalDetailPath
+        case .galleryVideoRecommended:
+            return HLJGalleryApiPath.galleryVideoRecommendedPath
+        case .videoRecommendedTopTalent:
+            return HLJGalleryApiPath.videoRecommendedTopTalentPath
+        case .videoRecommendedTopTopic:
+            return HLJGalleryApiPath.videoRecommendedTopTopicPath
+
         }
     }
     
@@ -64,7 +81,12 @@ extension HLJGalleryApi: TargetType {
     }
     
     var sampleData: Data {
-        return "".data(using: String.Encoding.utf8)!
+        switch self {
+        case .galleryVideoRecommended:
+            return QYHelp.jsonLocalData(with: "galleryVideoRecommended")
+        default:
+            return "".data(using: String.Encoding.utf8)!
+        }
     }
     
     var task: Task {
@@ -104,6 +126,18 @@ extension HLJGalleryApi: TargetType {
                               "page":page,
                               "per_page":per_page,
                               "showQuote":showQuote]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case .galleryVideoRecommended(let galleryID):
+            guard let galleryID = galleryID else { return .requestPlain }
+            let parameters = ["id": galleryID]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case .videoRecommendedTopTalent(let page, let perPage):
+            let parameters = ["page": page,
+                              "perPage":perPage]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case .videoRecommendedTopTopic(let page, let per_page):
+            let parameters = ["page": page,
+                              "per_page":per_page]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         default:
             return .requestPlain

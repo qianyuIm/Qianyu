@@ -19,6 +19,8 @@ class QYGalleryListController: QYCollectionController {
     
     let headerRefreshTrigger = PublishSubject<Void>()
     let isHeaderLoading = BehaviorRelay(value: false)
+    /// 与当前页面大小相关 headerInSectionHeight
+    private let kHUDTopOffset: CGFloat = 100 + (QYInch.navigationHeight + QYInch.value(50))/2
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,7 +53,7 @@ class QYGalleryListController: QYCollectionController {
         let firstLoad = Observable.of(())
         let input = QYGalleryListViewModel.Input(firstLoad: firstLoad,
                                                  headerRefresh: headerRefreshTrigger,
-                                                 footerRefresh: refreshFooter.rx.refresh.asObservable(),
+                                                 footerRefresh: refreshFooter.rx.refreshing.asObservable(),
                                                  selection: collectionView.rx.modelSelected(QYGalleryListSectionItem.self).asDriver())
         let output = viewModel.transform(input: input)
         self.output = output
@@ -68,14 +70,15 @@ class QYGalleryListController: QYCollectionController {
             .disposed(by: rx.disposeBag)
         viewModel.itemSelected.subscribe(onNext: { (item) in
             guard let galleryID = item.id else { return }
-//            globalNavigatorMap.push(QYProductUrl.galleryDetail(galleryID).path)
+            router.push(QYRouterInternal.galleryDetails(galleryID).path)
         }).disposed(by: rx.disposeBag)
         
         self.isLoading.subscribe(onNext: {[weak self] (isLoading) in
+            guard let strongSelf = self else { return }
             if isLoading {
-                QYHUD.showHUD()
+                QYHUD.showHUD(offset: strongSelf.kHUDTopOffset, in: self?.view)
             } else {
-                QYHUD.dismiss()
+                QYHUD.dismiss(on: strongSelf.view)
             }
         }).disposed(by: rx.disposeBag)
         

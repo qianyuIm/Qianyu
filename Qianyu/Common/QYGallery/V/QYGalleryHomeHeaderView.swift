@@ -74,8 +74,8 @@ class QYGalleryHomeHeaderView: UIView {
     lazy var allTagSender: QYButton = {
         let sender = QYButton()
         sender.imagePosition = .right
-        sender.spacingBetweenImageAndTitle = 2
-        sender.setImage(R.image.icon_gallery_arrow_right(), for: .normal)
+        sender.spacingBetweenImageAndTitle = 4
+        sender.setImage(R.image.icon_arrow_right(), for: .normal)
         sender.setTitle("全部分类", for: .normal)
         sender.setTitleColor(QYColor.mainColor, for: .normal)
         sender.titleLabel?.font = QYFont.fontSemibold(14)

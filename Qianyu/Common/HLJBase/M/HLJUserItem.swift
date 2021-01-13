@@ -12,7 +12,12 @@ class HLJUserItem: HandyJSON {
     var nick: String?
     var avatar: String?
     var default_avatar: String?
+    var description: String?
+    var videoCount: Int?
+    /// 普通用户
+    var specialty: String?
     var isFollowing: Int?
+    var verifiedTitle: String?
     /// 头像
     var avatarUrl: String? {
         guard let avatar = self.avatar else { return default_avatar }

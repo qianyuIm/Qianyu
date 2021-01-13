@@ -1,0 +1,471 @@
+{
+    "status": {
+        "code": 0,
+        "retCode": 0,
+        "msg": "success"
+    },
+    "data": [{
+        "id": 544303,
+        "title": "\u65b0\u5a18\u5a5a\u793c\u8a93\u8bcd\uff0c\u4f60\u53ef\u4ee5\u53c2\u8003",
+        "coverImgWebp": "https:\/\/qnvideo.hunliji.com\/seek-83baf1500e66631c530fd966f9860a58-1601740973.webp",
+        "width": 576,
+        "height": 1024,
+        "createdAt": "2020-10-03 17:36:29",
+        "shopProductLead": null,
+        "userId": 12512803,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 361886,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 0,
+        "changeContent": [],
+        "user": {
+            "id": 12512803,
+            "nick": "\u56fd\u8d38\u5927\u9152\u5e97",
+            "avatar": "https:\/\/qnm.hunliji.com\/A75B820ECBDACAD5C1F989A68291AC17.jpg",
+            "description": null,
+            "videoCount": 56,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0
+        },
+        "merchant": {
+            "id": 361886,
+            "name": "\u56fd\u8d38\u5927\u9152\u5e97",
+            "areaName": "\u671d\u9633\u533a",
+            "commentsCount": 12,
+            "logo": "https:\/\/qnm.hunliji.com\/A75B820ECBDACAD5C1F989A68291AC17.jpg",
+            "createLevel": -1,
+            "createLevelIcon": "",
+            "levelName": ""
+        },
+        "activity": null,
+        "gather": null,
+        "adMerchant": null,
+        "commentCount": 3,
+        "praiseCount": 1615,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 2063787,
+            "nick": "\u82dc\u6f9c",
+            "avatar": "http:\/\/qnm.hunliji.com\/FqacQIu3Ovu_x-WC4PDwMZQDVr3F"
+        }, {
+            "id": 1616593,
+            "nick": "\u9ec4\u6cb9\u5496\u55b1\u996d",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a69t40tegus1mc61a5gfln1cr07.jpg"
+        }],
+        "layoutType": 2,
+        "share": {
+            "title": "\u65b0\u5a18\u5a5a\u793c\u8a93\u8bcd\uff0c\u4f60\u53ef\u4ee5\u53c2\u8003",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=544303",
+            "icon": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/FsObNH0ftLnrJhWBlnU6Jxscmrl4",
+            "id": 544303
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 7529,
+            "name": "\u65b0\u5a18\u9020\u578b",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1ednhm9t51hbt19bj1bbd17dng9a1p.jpg",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "https:\/\/qnvideo.hunliji.com\/Ug8snL7Ahn4MguohY2TK_DWU4zU=\/FsObNH0ftLnrJhWBlnU6Jxscmrl4.mp4",
+        "coverPath": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/FsObNH0ftLnrJhWBlnU6Jxscmrl4",
+        "route": null
+    }, {
+        "id": 611921,
+        "title": "\u62cd\u4e00\u5957\u6e05\u65b0\u6cbb\u6108\u5e72\u51c0\u53c8\u7f8e\u597d\u7684\u5a5a\u7eb1\u7167\u5427",
+        "coverImgWebp": "https:\/\/qnvideo.hunliji.com\/seek-65aa168ee237df1704233ddc33612da5-1605862159.webp",
+        "width": 1920,
+        "height": 1080,
+        "createdAt": "2020-11-20 10:04:10",
+        "shopProductLead": null,
+        "userId": 911202,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 12647,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 0,
+        "changeContent": [],
+        "user": {
+            "id": 911202,
+            "nick": "\u5927\u89c6\u89c9\u6444\u5f71\uff08\u661f\u6c99\u5b9a\u5236\u5e97\uff09",
+            "avatar": "http:\/\/qnm.hunliji.com\/B5A81AD0A4C352A8ECAD70DCDA3D3414.jpg",
+            "description": null,
+            "videoCount": 114,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0
+        },
+        "merchant": {
+            "id": 12647,
+            "name": "\u5927\u89c6\u89c9\u6444\u5f71\uff08\u661f\u6c99\u5b9a\u5236\u5e97\uff09",
+            "areaName": "\u957f\u6c99\u53bf",
+            "commentsCount": 348,
+            "logo": "http:\/\/qnm.hunliji.com\/B5A81AD0A4C352A8ECAD70DCDA3D3414.jpg",
+            "createLevel": 1,
+            "createLevelIcon": "https:\/\/qnm.hunliji.com\/FgZsEiEE6PDuntfDH6tEOp8eecy5",
+            "levelName": "\u4f18\u8d28\u5185\u5bb9\u5546\u5bb6"
+        },
+        "activity": null,
+        "gather": null,
+        "adMerchant": null,
+        "commentCount": 0,
+        "praiseCount": 10,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 1736504,
+            "nick": "\u74f7\u5a03\u5a03wenli ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a73t56r9orvn1ic0g1p6j6d7.jpg"
+        }, {
+            "id": 1895223,
+            "nick": "\u67e0\u6aac\u5473\u7684\u8292\u679c",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a9h1tnpofvb1e7c15pt1d0c1vgn7.jpg"
+        }],
+        "layoutType": 1,
+        "share": {
+            "title": "\u62cd\u4e00\u5957\u6e05\u65b0\u6cbb\u6108\u5e72\u51c0\u53c8\u7f8e\u597d\u7684\u5a5a\u7eb1\u7167\u5427",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=611921",
+            "icon": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lgpo4yeAL2Mm2MBvu8TcB7IQei4W",
+            "id": 611921
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 232047,
+            "name": "\u5a5a\u7eb1\u7167\u62cd\u51fa\u9ad8\u683c\u8c03",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1dpklomj61rctaltjkcll01gds18.jpg",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "https:\/\/qnvideo.hunliji.com\/Ug8snL7Ahn4MguohY2TK_DWU4zU=\/lgpo4yeAL2Mm2MBvu8TcB7IQei4W.mp4",
+        "coverPath": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lgpo4yeAL2Mm2MBvu8TcB7IQei4W",
+        "fromFlag": "\u504f\u597d",
+        "trackExt": {
+            "fromFlag": "\u504f\u597d"
+        },
+        "route": null
+    }, {
+        "id": 555934,
+        "title": "\u6cd5\u5f0f\u4fbf\u88c5\u5a5a\u7eb1\u7167\u600e\u4e48\u62cd\uff1f",
+        "coverImgWebp": "https:\/\/qnvideo.hunliji.com\/seek-0018a2f56360da215f68eb838756b490-1602691457.webp",
+        "width": 1080,
+        "height": 1920,
+        "createdAt": "2020-10-14 14:08:26",
+        "shopProductLead": null,
+        "userId": 10951770,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 352775,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 0,
+        "changeContent": [],
+        "user": {
+            "id": 10951770,
+            "nick": "\u96c5\u4e91\u5168\u7403\u65c5\u62cd\uff08\u5927\u7406\u7ad9\uff09",
+            "avatar": "http:\/\/qnm.hunliji.com\/B5FE577282595B4E836CD314ABAEBFD5",
+            "description": null,
+            "videoCount": 41,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0
+        },
+        "merchant": {
+            "id": 352775,
+            "name": "\u96c5\u4e91\u5168\u7403\u65c5\u62cd\uff08\u5927\u7406\u7ad9\uff09",
+            "areaName": "\u5927\u7406\u5e02",
+            "commentsCount": 623,
+            "logo": "http:\/\/qnm.hunliji.com\/B5FE577282595B4E836CD314ABAEBFD5",
+            "createLevel": 0,
+            "createLevelIcon": "https:\/\/qnm.hunliji.com\/Fm8hg7bSJ2Y7j9nfr73XBoKOGxHT",
+            "levelName": "\u6f5c\u529b\u5185\u5bb9\u5546\u5bb6"
+        },
+        "activity": null,
+        "gather": null,
+        "adMerchant": null,
+        "commentCount": 0,
+        "praiseCount": 16,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 1775059,
+            "nick": "\u6d4b\u8bd5",
+            "avatar": "http:\/\/qnm.hunliji.com\/FimDPNCuiXswikfxfub_W4BxrcJr"
+        }, {
+            "id": 1814885,
+            "nick": "\u5c0f\u5c0f\u9cd6\u513f ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a8d03kus12ju10cjith1q9hjob7.jpg"
+        }],
+        "layoutType": 2,
+        "share": {
+            "title": "\u6cd5\u5f0f\u4fbf\u88c5\u5a5a\u7eb1\u7167\u600e\u4e48\u62cd\uff1f",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=555934",
+            "icon": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lu5g-XHMBQx8E67nBVSiLn2uzl9_",
+            "id": 555934
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 231720,
+            "name": "\u521b\u610f\u5a5a\u7eb1\u7167",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1dd2r3ou116jvan6sn48ei1haq16f.jpg",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "https:\/\/qnvideo.hunliji.com\/Ug8snL7Ahn4MguohY2TK_DWU4zU=\/lu5g-XHMBQx8E67nBVSiLn2uzl9_.mp4",
+        "coverPath": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lu5g-XHMBQx8E67nBVSiLn2uzl9_",
+        "fromFlag": "\u504f\u597d",
+        "trackExt": {
+            "fromFlag": "\u504f\u597d"
+        },
+        "route": null
+    }, {
+        "id": 111918,
+        "title": "\u8bba\u4e3a\u4ec0\u4e48\u6211\u4e0d\u7528\u6bcf\u5929\u6d17\u8863\u505a\u996d\uff1f\u56e0\u4e3a\u6211\u6709\u94c1\u7802\u638c\uff01\ud83e\udd23",
+        "coverImgWebp": "http:\/\/xhs-media.hunliji.com\/seek-8db24d169da4b904077ecbf0161e4ae0-1567590063.webp",
+        "width": 720,
+        "height": 1280,
+        "createdAt": "2019-09-04 17:41:02",
+        "shopProductLead": null,
+        "userId": 1394,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 1,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 0,
+        "changeContent": [],
+        "user": {
+            "id": 1394,
+            "nick": "@\u5d14\u5c0f\u5f6c~",
+            "avatar": "http:\/\/qnm.hunliji.com\/Fn1ZlicyixAqoctdcxI6xv0qRaW-",
+            "description": "",
+            "videoCount": 1,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0,
+            "createLevel": -1,
+            "createLevelIcon": null,
+            "levelName": null,
+            "verifiedLevel": 0,
+            "verifiedTitle": 0
+        },
+        "merchant": null,
+        "activity": null,
+        "gather": null,
+        "adMerchant": null,
+        "commentCount": 0,
+        "praiseCount": 387,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 1616570,
+            "nick": "\u5d14\u73c9\u8d77\u662f\u6211\u631a\u7231",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a69spn431rf019uq16ae1pqq49p7.jpg"
+        }, {
+            "id": 1917422,
+            "nick": "\u549a\u549a\u549a911 ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a9tr53kt15vm19a6162gvuna5n7.jpg"
+        }],
+        "layoutType": 2,
+        "share": {
+            "title": "\u8bba\u4e3a\u4ec0\u4e48\u6211\u4e0d\u7528\u6bcf\u5929\u6d17\u8863\u505a\u996d\uff1f\u56e0\u4e3a\u6211\u6709\u94c1\u7802\u638c\uff01\ud83e\udd23",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=111918",
+            "icon": "http:\/\/xhs-media.hunliji.com\/img-8db24d169da4b904077ecbf0161e4ae0-1567590062.jpg",
+            "id": 111918
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 16154,
+            "name": "\u8da3\u5473\u641e\u7b11\u96c6\u9526\uff0c\u62ef\u6551\u4e0d\u5f00\u5fc3",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1dhl1d23313gf1eb2e9r461k5hql.jpg",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "http:\/\/xhs-media.hunliji.com\/5cfb5d7c4ed39100017c4d9e.mp4",
+        "coverPath": "http:\/\/xhs-media.hunliji.com\/img-8db24d169da4b904077ecbf0161e4ae0-1567590062.jpg",
+        "fromFlag": "\u63a2\u7d22",
+        "trackExt": {
+            "fromFlag": "\u63a2\u7d22"
+        },
+        "route": null
+    }, {
+        "id": 402012,
+        "title": "\u4e00\u751f\u4e00\u679a\u7684\u6c42\u5a5a\u94bb\u6212\uff0c\u662f\u5bf9\u4f60\u6700\u597d\u7684\u7231\ud83d\udc8d\u5317\u4eacDR\u63a2\u5e97",
+        "coverImgWebp": "https:\/\/qnvideo.hunliji.com\/seek-526526fa7bb8088ba0b00f4d8a30bbc7-1591612592.webp",
+        "width": 1080,
+        "height": 1920,
+        "createdAt": "2020-06-08 18:36:30",
+        "shopProductLead": null,
+        "userId": 16780642,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 1,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 1,
+        "changeContent": {
+            "guideText": "\u89c6\u9891\u63d0\u53ca\u5546\u5bb6",
+            "butRoute": "hlj:\/\/MessageChatModule\/ToMsgConversationViewController?merchantUID=18707953",
+            "butText": "\u54a8\u8be2\u4f5c\u54c1"
+        },
+        "user": {
+            "id": 16780642,
+            "nick": "\u8d1d\u62c9",
+            "avatar": "https:\/\/qnm.hunliji.com\/FtoU5QdQWWK827QX4hL3fQr6IyoC",
+            "description": "\u65f6\u5c1a\u8fbe\u4eba\uff0c\u5a5a\u793c\u7eaa\u4f18\u8d28\u5907\u5a5a\u535a\u4e3b\n\u5173\u6ce8\u6211\uff0c\u4e00\u8d77\u505a\u6700\u7f8e\u65b0\u5a18",
+            "videoCount": 79,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0,
+            "createLevel": -1,
+            "createLevelIcon": null,
+            "levelName": null,
+            "verifiedLevel": 1,
+            "verifiedTitle": "\u4f18\u8d28\u5907\u5a5a\u535a\u4e3b"
+        },
+        "merchant": null,
+        "activity": null,
+        "gather": {
+            "id": 232771,
+            "name": "\u5317\u4eac\u8fbe\u4eba\u63a2\u5e97vlog",
+            "sort": 0
+        },
+        "adMerchant": {
+            "id": 391314,
+            "name": "DR\u94bb\u6212\u5317\u4eac\u94f6\u6cf0in88\u65d7\u8230\u5e97",
+            "logoPath": "https:\/\/qnm.hunliji.com\/FBB98097D451DF2E4086330DB1ACA50C.jpg",
+            "userId": 18707953,
+            "commentsCount": 8,
+            "areaName": "\u4e1c\u57ce\u533a",
+            "merchantComment": {
+                "totalGoodCount": 8
+            }
+        },
+        "commentCount": 15,
+        "praiseCount": 442,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 1764092,
+            "nick": "Joyann_7 ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a7j9etjrt7ivvt1ijn8p7mpr7.jpg"
+        }, {
+            "id": 1850802,
+            "nick": "Geminiiiiiii ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a8sf11ri140j1nlbeqn1moc1arn7.jpg"
+        }],
+        "layoutType": 2,
+        "share": {
+            "title": "\u4e00\u751f\u4e00\u679a\u7684\u6c42\u5a5a\u94bb\u6212\uff0c\u662f\u5bf9\u4f60\u6700\u597d\u7684\u7231\ud83d\udc8d\u5317\u4eacDR\u63a2\u5e97",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=402012",
+            "icon": "https:\/\/qnm.hunliji.com\/img-526526fa7bb8088ba0b00f4d8a30bbc7-1591612590.jpg",
+            "id": 402012
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 231723,
+            "name": "\u5973\u65b9\u5fc5\u4e70\u4e09\u91d1\u5a5a\u6212",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1dup6r73ck647re1c6i1ln5174d15.png",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "https:\/\/qnvideo.hunliji.com\/o_1ea9nviej1uq78ti14en1f4i1sqjn.mp4",
+        "coverPath": "https:\/\/qnm.hunliji.com\/img-526526fa7bb8088ba0b00f4d8a30bbc7-1591612590.jpg",
+        "fromFlag": "\u63a2\u7d22",
+        "trackExt": {
+            "fromFlag": "\u63a2\u7d22"
+        },
+        "route": null
+    }, {
+        "id": 480753,
+        "title": "\u82d7\u82d7\u8fd9\u4e1c\u5317\u5927\u599e\u592a\u62db\u4eba\u7a00\u7f55\u4e86",
+        "coverImgWebp": "https:\/\/qnvideo.hunliji.com\/seek-a7d63b9265040d4d00658bd45a2738fe-1596902693.webp",
+        "width": 1080,
+        "height": 1920,
+        "createdAt": "2020-08-08 16:07:33",
+        "shopProductLead": null,
+        "userId": 932413,
+        "routeId": 0,
+        "routeParam": "",
+        "merchantId": 13004,
+        "routeEnterTxt": "",
+        "templateId": 0,
+        "isChangeVideo": 0,
+        "changeContent": [],
+        "user": {
+            "id": 932413,
+            "nick": "\u805a\u7126\u6444\u5f71\uff08\u5317\u4eac\u603b\u5e97\uff09",
+            "avatar": "http:\/\/qnm.hunliji.com\/19CEDA4E840DFC5587C4A7B80ED962D7.jpg",
+            "description": null,
+            "videoCount": 406,
+            "specialty": "\u666e\u901a\u7528\u6237",
+            "isFollowing": 0
+        },
+        "merchant": {
+            "id": 13004,
+            "name": "\u805a\u7126\u6444\u5f71\uff08\u5317\u4eac\u603b\u5e97\uff09",
+            "areaName": "\u4e30\u53f0\u533a",
+            "commentsCount": 1114,
+            "logo": "http:\/\/qnm.hunliji.com\/19CEDA4E840DFC5587C4A7B80ED962D7.jpg",
+            "createLevel": 2,
+            "createLevelIcon": "https:\/\/qnm.hunliji.com\/FpxC1JpwW2KOGdQXFSbnFgROV4j2",
+            "levelName": "\u4eba\u6c14\u5185\u5bb9\u5546\u5bb6"
+        },
+        "activity": null,
+        "gather": null,
+        "adMerchant": null,
+        "commentCount": 0,
+        "praiseCount": 263,
+        "videoPv": 1000,
+        "shopProduct": null,
+        "browse": [{
+            "id": 1750421,
+            "nick": "\u738b\u5c0f\u821f\u7231\u770b\u6587\u732e ",
+            "avatar": "http:\/\/marry.qiniudn.com\/o_1a7bgs8bn1fk915pm1gfnae0hul7.jpg"
+        }, {
+            "id": 2049467,
+            "nick": "\u5a9b\u5b52\u4e36",
+            "avatar": "http:\/\/qnm.hunliji.com\/Fs5vZcN4BKkfMIzMScB5U_Y8spMg"
+        }],
+        "layoutType": 2,
+        "share": {
+            "title": "\u82d7\u82d7\u8fd9\u4e1c\u5317\u5927\u599e\u592a\u62db\u4eba\u7a00\u7f55\u4e86",
+            "desc": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "desc2": "\u6211\u5728\u300c\u5a5a\u793c\u7eaa\u300d\u53d1\u73b0\u4e86\u4e00\u4e2a\u6709\u8da3\u7684\u89c6\u9891",
+            "url": "http:\/\/www.hunliji.com\/p\/wedding\/Public\/wap\/activity\/mv-share\/index.html#\/index?id=480753",
+            "icon": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lhqS6MLMhHsBoCqxHMd1nJhgXadz",
+            "id": 480753
+        },
+        "isPraised": 0,
+        "topicMark": {
+            "id": 16715,
+            "name": "\u62cd\u5a5a\u7eb1\u7167",
+            "imagePath": "https:\/\/qnm.hunliji.com\/o_1ednk9o5tra9g9l114dk9ktcodk.png",
+            "videoTemp": null,
+            "jumpType": 1,
+            "tempType": 0
+        },
+        "path": "https:\/\/qnvideo.hunliji.com\/Ug8snL7Ahn4MguohY2TK_DWU4zU=\/lhqS6MLMhHsBoCqxHMd1nJhgXadz.mp4",
+        "coverPath": "https:\/\/qnvideo.hunliji.com\/nUyP59nq1hJe-8iSZV9huoGHk8Y=\/lhqS6MLMhHsBoCqxHMd1nJhgXadz",
+        "fromFlag": "\u504f\u597d",
+        "trackExt": {
+            "fromFlag": "\u504f\u597d"
+        },
+        "route": null
+    }],
+    "time": 1610011416
+}

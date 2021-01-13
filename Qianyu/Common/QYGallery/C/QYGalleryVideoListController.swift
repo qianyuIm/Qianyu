@@ -18,6 +18,8 @@ class QYGalleryVideoListController: QYCollectionController {
     var output: QYGalleryVideoViewModel.Output?
     let headerRefreshTrigger = PublishSubject<Void>()
     let isHeaderLoading = BehaviorRelay(value: false)
+    /// 与当前页面大小相关 headerInSectionHeight
+    private let kHUDTopOffset: CGFloat = 100 + (QYInch.navigationHeight + QYInch.value(50))/2
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +46,7 @@ class QYGalleryVideoListController: QYCollectionController {
         super.bindViewModel()
         guard let viewModel = viewModel as? QYGalleryVideoViewModel else { return  }
         let firstLoad = Observable.of(())
-        let input = QYGalleryVideoViewModel.Input(firstLoad: firstLoad,headerRefresh:headerRefreshTrigger, footerRefresh: refreshFooter.rx.refresh.asObservable(),
+        let input = QYGalleryVideoViewModel.Input(firstLoad: firstLoad,headerRefresh:headerRefreshTrigger, footerRefresh: refreshFooter.rx.refreshing.asObservable(),
                                                  selection: collectionView.rx.modelSelected(QYGalleryVideoListSectionItem.self).asDriver())
         let output = viewModel.transform(input: input)
         self.output = output
@@ -61,14 +63,15 @@ class QYGalleryVideoListController: QYCollectionController {
             .disposed(by: rx.disposeBag)
         viewModel.itemSelected.subscribe(onNext: { (item) in
             guard let galleryID = item.id else { return }
-//            globalNavigatorMap.push(QYProductUrl.galleryDetail(galleryID).path)
+            router.push(QYRouterInternal.galleryVideoRecommended(galleryID).path)
         }).disposed(by: rx.disposeBag)
                
         self.isLoading.subscribe(onNext: {[weak self] (isLoading) in
+            guard let `self` = self else { return }
             if isLoading {
-                QYHUD.showHUD()
+                QYHUD.showHUD(offset: self.kHUDTopOffset, in: self.view)
             } else {
-                QYHUD.dismiss()
+                QYHUD.dismiss(on: self.view)
             }
         }).disposed(by: rx.disposeBag)
         output.isHeaderRefresh.asObservable()

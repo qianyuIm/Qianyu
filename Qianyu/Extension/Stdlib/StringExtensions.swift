@@ -51,12 +51,14 @@ extension QianyuWrapper where Base == String {
     /// - Parameters:
     ///   - width: 宽度
     ///   - height: 高度
+    ///   - version: 某些图片需要特定参数
     ///   - quality: 图片质量默认 85
     /// - Returns:
     func imageUrl(for width: CGFloat,
                   height: CGFloat,
+                  version: Int = 1,
                   quality:CGFloat = 85) -> URL? {
-        let string = imageString(for: width, height: height, quality: quality)
+        let string = imageString(for: width, height: height, version: version, quality: quality)
         return URL(string: string)
     }
     /// 根据宽高返回对应图片地址字符串
@@ -67,10 +69,11 @@ extension QianyuWrapper where Base == String {
     /// - Returns:
     func imageString(for width: CGFloat,
                      height: CGFloat,
+                     version: Int = 1,
                      quality: CGFloat = 85) -> String? {
         let realWidth = width * QYInch.scale
         let realHeight = height * QYInch.scale
-        let string = self.base + "?imageView2/1/w/\(Int(realWidth))/h/\(Int(realHeight))/q/\(Int(quality))/format/webp"
+        let string = self.base + "?imageView2/\(version)/w/\(Int(realWidth))/h/\(Int(realHeight))/q/\(Int(quality))/format/webp"
         return string
     }
     

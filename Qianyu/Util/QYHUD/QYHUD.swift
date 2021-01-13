@@ -17,7 +17,6 @@ class QYHUD {
         guard let hud = progressHUD(for: offset, isInteraction: isInteraction, in: view) else { return }
         hud.label.text = message
     }
-    
     class func showSuccessIcon(message: String? = nil,
                                offset: CGFloat? = nil,
                                isInteraction: Bool = false,
@@ -74,11 +73,10 @@ class QYHUD {
         }
         hud.isUserInteractionEnabled = isInteraction
         hud.contentColor = .white
-        hud.margin = 30
+        hud.margin = 25
         hud.bezelView.style = .blur
         hud.bezelView.blurEffectStyle = .dark
         hud.backgroundView.style = .solidColor
-        hud.backgroundView.color = UIColor.black.withAlphaComponent(0.6)
         return hud
     }
 }

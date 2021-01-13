@@ -13,7 +13,7 @@ import RxCocoa
 
 extension Reactive where Base: MJRefreshComponent {
     
-    var refresh: ControlEvent<Void> {
+    var refreshing: ControlEvent<Void> {
         let source = Observable<Void>.create { [weak control = self.base] observer in
             if let control = control {
                 control.refreshingBlock = {
@@ -40,6 +40,7 @@ extension Reactive where Base: MJRefreshComponent {
     
    var isRefreshing: Binder<Bool> {
         return Binder(base) { header, refresh in
+            logDebug("refresh = \(refresh)")
             if refresh && header.isRefreshing {
                 return
             } else {

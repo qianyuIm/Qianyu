@@ -15,8 +15,11 @@ extension QianyuWrapper where Base: UIImageView {
     ///   - url:
     ///   - placeholder:
     func setImage(with url: URL?,
-                  placeholderImage placeholder: UIImage? = placeholder) {
-        base.sd_imageTransition = SDWebImageTransition.fade(duration: 0.3)
+                  placeholderImage placeholder: UIImage? = placeholder,
+                  isImageTransition: Bool = true) {
+        if isImageTransition {
+            base.sd_imageTransition = SDWebImageTransition.fade(duration: 0.3)
+        }
         base.sd_setImage(with: url, placeholderImage: placeholder)
     }
     

@@ -88,22 +88,34 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
 
-  /// This `R.image` struct is generated, and contains static references to 63 images.
+  /// This `R.image` struct is generated, and contains static references to 71 images.
   struct image {
+    /// Image `icon_arrow_right_gray`.
+    static let icon_arrow_right_gray = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_arrow_right_gray")
+    /// Image `icon_arrow_right`.
+    static let icon_arrow_right = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_arrow_right")
     /// Image `icon_emptyNetwork_placeholder`.
     static let icon_emptyNetwork_placeholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_emptyNetwork_placeholder")
     /// Image `icon_empty_bookshelf_placeholder`.
     static let icon_empty_bookshelf_placeholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_empty_bookshelf_placeholder")
     /// Image `icon_empty_placeholder`.
     static let icon_empty_placeholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_empty_placeholder")
-    /// Image `icon_gallery_arrow_right`.
-    static let icon_gallery_arrow_right = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_arrow_right")
     /// Image `icon_gallery_collection_normal`.
     static let icon_gallery_collection_normal = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_collection_normal")
     /// Image `icon_gallery_collection_seleted`.
     static let icon_gallery_collection_seleted = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_collection_seleted")
+    /// Image `icon_gallery_merchant_close`.
+    static let icon_gallery_merchant_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_merchant_close")
     /// Image `icon_gallery_videoTag`.
     static let icon_gallery_videoTag = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_videoTag")
+    /// Image `icon_gallery_video_comment`.
+    static let icon_gallery_video_comment = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_video_comment")
+    /// Image `icon_gallery_video_like`.
+    static let icon_gallery_video_like = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_video_like")
+    /// Image `icon_gallery_video_liked`.
+    static let icon_gallery_video_liked = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_video_liked")
+    /// Image `icon_gallery_video_share`.
+    static let icon_gallery_video_share = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_gallery_video_share")
     /// Image `icon_hud_error`.
     static let icon_hud_error = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_hud_error")
     /// Image `icon_hud_success`.
@@ -182,6 +194,8 @@ struct R: Rswift.Validatable {
     static let icon_navigation_search = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_navigation_search")
     /// Image `icon_networkError_placeholder`.
     static let icon_networkError_placeholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_networkError_placeholder")
+    /// Image `icon_play_pause`.
+    static let icon_play_pause = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_play_pause")
     /// Image `icon_shelf_check`.
     static let icon_shelf_check = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_shelf_check")
     /// Image `icon_shelf_local`.
@@ -196,6 +210,8 @@ struct R: Rswift.Validatable {
     static let icon_shelf_updata = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_shelf_updata")
     /// Image `icon_shelf_wifi`.
     static let icon_shelf_wifi = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_shelf_wifi")
+    /// Image `icon_video_loading_cover`.
+    static let icon_video_loading_cover = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_video_loading_cover")
     /// Image `tabbar_buy_norm_26x26_`.
     static let tabbar_buy_norm_26x26_ = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_buy_norm_26x26_")
     /// Image `tabbar_buy_seleted_26x26_`.
@@ -216,6 +232,20 @@ struct R: Rswift.Validatable {
     static let tabbar_video_norm_26x26_ = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_video_norm_26x26_")
     /// Image `tabbar_video_seleted_26x26_`.
     static let tabbar_video_seleted_26x26_ = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_video_seleted_26x26_")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_arrow_right", bundle: ..., traitCollection: ...)`
+    static func icon_arrow_right(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_arrow_right, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_arrow_right_gray", bundle: ..., traitCollection: ...)`
+    static func icon_arrow_right_gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_arrow_right_gray, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_emptyNetwork_placeholder", bundle: ..., traitCollection: ...)`
@@ -239,13 +269,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "icon_gallery_arrow_right", bundle: ..., traitCollection: ...)`
-    static func icon_gallery_arrow_right(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.icon_gallery_arrow_right, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_gallery_collection_normal", bundle: ..., traitCollection: ...)`
     static func icon_gallery_collection_normal(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_gallery_collection_normal, compatibleWith: traitCollection)
@@ -260,9 +283,44 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_gallery_merchant_close", bundle: ..., traitCollection: ...)`
+    static func icon_gallery_merchant_close(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_gallery_merchant_close, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_gallery_videoTag", bundle: ..., traitCollection: ...)`
     static func icon_gallery_videoTag(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_gallery_videoTag, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_gallery_video_comment", bundle: ..., traitCollection: ...)`
+    static func icon_gallery_video_comment(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_gallery_video_comment, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_gallery_video_like", bundle: ..., traitCollection: ...)`
+    static func icon_gallery_video_like(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_gallery_video_like, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_gallery_video_liked", bundle: ..., traitCollection: ...)`
+    static func icon_gallery_video_liked(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_gallery_video_liked, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_gallery_video_share", bundle: ..., traitCollection: ...)`
+    static func icon_gallery_video_share(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_gallery_video_share, compatibleWith: traitCollection)
     }
     #endif
 
@@ -540,6 +598,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_play_pause", bundle: ..., traitCollection: ...)`
+    static func icon_play_pause(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_play_pause, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icon_shelf_check", bundle: ..., traitCollection: ...)`
     static func icon_shelf_check(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_shelf_check, compatibleWith: traitCollection)
@@ -585,6 +650,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "icon_shelf_wifi", bundle: ..., traitCollection: ...)`
     static func icon_shelf_wifi(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_shelf_wifi, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon_video_loading_cover", bundle: ..., traitCollection: ...)`
+    static func icon_video_loading_cover(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icon_video_loading_cover, compatibleWith: traitCollection)
     }
     #endif
 

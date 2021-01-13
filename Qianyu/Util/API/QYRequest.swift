@@ -44,10 +44,20 @@ let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider.RequestResultCl
     }
 }
 let apiProvider = MoyaProvider<MultiTarget>(requestClosure: timeoutClosure)
+let apiLocalProvider = MoyaProvider<MultiTarget>(requestClosure: timeoutClosure, stubClosure: { (target) -> StubBehavior in
+    return StubBehavior.delayed(seconds: 0.5)
+})
+/// 是否本地json数据
+let isLocalRequest: Bool = true
 
 extension Moya.TargetType {
     func request() -> Single<Moya.Response> {
-        return apiProvider.rx.request(.target(self))
+        switch self.path {
+        case HLJGalleryApiPath.galleryVideoRecommendedPath:
+            return apiLocalProvider.rx.request(.target(self))
+        default:
+            return apiProvider.rx.request(.target(self))
+        }
     }
 }
 

@@ -43,8 +43,8 @@ class QYGalleryListCell: UICollectionViewCell {
         let sender = QYButton()
         sender.imagePosition = .left
         sender.spacingBetweenImageAndTitle = 2
-        sender.setImage("button_collection_main_norm_18x18_".ext.localImage, for: .normal)
-        sender.setImage("button_collection_main_seleted_18x18_".ext.localImage, for: .selected)
+        sender.setImage(R.image.icon_gallery_collection_normal(), for: .normal)
+        sender.setImage(R.image.icon_gallery_collection_seleted(), for: .selected)
         sender.titleLabel?.font = QYFont.fontRegular(14)
         sender.setTitleColor(QYColor.color666, for: .normal)
         return sender

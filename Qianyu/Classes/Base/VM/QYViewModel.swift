@@ -10,7 +10,7 @@ import Foundation
 import RxActivityIndicator
 import RxSwift
 import RxCocoa
-
+import NSObject_Rx
 protocol QYViewModelType {
     associatedtype Input
     associatedtype Output

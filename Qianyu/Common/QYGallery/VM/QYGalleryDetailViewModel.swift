@@ -12,7 +12,7 @@ class QYGalleryDetailViewModel: QYViewModel {
 
     var galleryId: Int
     
-    init(galleryId: Int) {
+    required init(galleryId: Int) {
         self.galleryId = galleryId
         super.init()
     }

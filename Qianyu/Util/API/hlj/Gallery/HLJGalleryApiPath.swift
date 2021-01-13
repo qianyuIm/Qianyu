@@ -14,5 +14,9 @@ struct HLJGalleryApiPath {
     static let galleryCategoryItemPath = "/p/wedding/index.php/home/APIPhotoGallery/listV4"
     static let galleryAllCategoryPath = "/p/wedding/index.php/Home/APIPhotoGallery/AllMarksV2"
     static let galleryRankingDetailPath = "/hps/home/photoGallery/index/ranking"
-    static let galleryNormalDetail = "/hps/home/photoGallery/index/detailV2"
+    static let galleryNormalDetailPath = "/hps/home/photoGallery/index/detailV2"
+    static let galleryVideoRecommendedPath = "/hps/home/mix/video/recommendDetail"
+    static let videoRecommendedTopTalentPath = "/hms/hljCommunity/appApi/shortVideo/creatorVideoList"
+    static let videoRecommendedTopTopicPath = "/hps/home/mix/video/hotVideo"
+
 }

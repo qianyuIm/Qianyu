@@ -70,7 +70,7 @@ class QYGalleryHomeController: QYViewController {
         }
         
         let firstLoad = Observable.of(())
-        let input = QYGalleryHomeViewModel.Input(initialize: firstLoad, headerRefresh: refreshHeader.rx.refresh.asObservable())
+        let input = QYGalleryHomeViewModel.Input(initialize: firstLoad, headerRefresh: refreshHeader.rx.refreshing.asObservable())
         let output = viewModel.transform(input: input)
         output.holeItems.skip(1).subscribe(onNext: { [weak self](holeItems) in
             self?.reloadHeaderView(with: holeItems)
@@ -82,9 +82,9 @@ class QYGalleryHomeController: QYViewController {
         
         self.isLoading.subscribe(onNext: { [weak self](isLoading) in
             if isLoading {
-                QYHUD.showHUD()
+                QYHUD.showHUD(in: self?.view)
             } else {
-//                QYHUD.dismiss()
+                QYHUD.dismiss(on: self?.view)
             }
         }).disposed(by: rx.disposeBag)
         
@@ -95,7 +95,6 @@ class QYGalleryHomeController: QYViewController {
                 .scrollView.rx.reloadEmptyData)
             .disposed(by: rx.disposeBag)
         if let listItem = pagingView.currentList as? QYGalleryListController {
-            
             viewModel.headerRefreshTrigger.bind(to: listItem.headerRefreshTrigger).disposed(by: rx.disposeBag)
             listItem.isHeaderLoading.bind(to: refreshHeader.rx.isRefreshing).disposed(by: rx.disposeBag)
         }

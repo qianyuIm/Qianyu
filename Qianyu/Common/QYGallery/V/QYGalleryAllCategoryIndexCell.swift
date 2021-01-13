@@ -78,7 +78,7 @@ class QYGalleryAllCategoryIndexCell: UITableViewCell {
         self.lineView.isHidden = false
         self.bgView.backgroundColor = .clear
         self.titleLabel.font = QYFont.fontSemibold(15)
-        self.titleLabel.textColor = QYColor.color000
+        self.titleLabel.textColor = QYColor.blackColor
         
     }
     func adjustAfterCell() {

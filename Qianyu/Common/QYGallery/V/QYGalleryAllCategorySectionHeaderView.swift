@@ -11,7 +11,7 @@ import UIKit
 class QYGalleryAllCategorySectionHeaderView: UICollectionReusableView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = QYColor.color000
+        label.textColor = QYColor.blackColor
         label.font = QYFont.fontSemibold(16)
         return label
     }()
@@ -23,7 +23,7 @@ class QYGalleryAllCategorySectionHeaderView: UICollectionReusableView {
         return label
     }()
     lazy var coverImageView: UIImageView = {
-        let imageV = UIImageView(image: "icon_product_arrow_right_gray_14*24_7x12_".ext.localImage)
+        let imageV = UIImageView(image: R.image.icon_arrow_right_gray())
         return imageV
     }()
     

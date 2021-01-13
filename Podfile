@@ -57,6 +57,9 @@ target 'Qianyu' do
   pod 'YYText', '~> 1.0.7'
   # layout
   pod 'JJCollectionViewRoundFlowLayout_Swift', '~> 2.3.1'
+  # player
+  pod 'ZFPlayer/AVPlayer', '~> 4.0.1'
+  pod 'ZFPlayer/ControlView'
   # debug tool
   pod 'MLeaksFinder', :configurations => ['Debug']
   pod 'FLEX', '~> 4.2.2', :configurations => ['Debug']

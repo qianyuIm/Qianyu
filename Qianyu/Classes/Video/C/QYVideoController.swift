@@ -17,7 +17,8 @@ class QYVideoController: QYViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        QYHUD.showErrorIcon()
+//        QYHUD.showErrorIcon()
 //        router.push(QYRouterInternal.galleryHome.path, context: nil)
+        router.push(QYRouterInternal.galleryVideoRecommended(540035).path)
     }
 }

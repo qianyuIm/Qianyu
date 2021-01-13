@@ -17,8 +17,8 @@ struct QYColor {
     static let mainColor = color("#F83245")
     /// placeholder
     static let placeholder = color("#EEEEEE")
-    /// 000
-    static let color000 = color("#000000")
+    /// 黑色
+    static let blackColor = color("000000")
     /// 333
     static let color333 = color("#333333")
     /// 666

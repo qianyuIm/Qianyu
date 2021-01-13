@@ -53,8 +53,8 @@ class QYGalleryCategoryItemController: QYCollectionController {
         guard let viewModel = viewModel as? QYGalleryCategoryItemViewModel else { return }
         self.navigationItem.title = viewModel.title
         let initialize = Observable.of(())
-        let headerRefresh = refreshHeader.rx.refresh.asObservable()
-        let footerRefresh = refreshFooter.rx.refresh.asObservable()
+        let headerRefresh = refreshHeader.rx.refreshing.asObservable()
+        let footerRefresh = refreshFooter.rx.refreshing.asObservable()
         let retry = Observable.merge([initialize, headerRefresh])
         let input = QYGalleryCategoryItemViewModel.Input(retry: retry, headerRefresh: headerRefresh,
                                                          footerRefresh: footerRefresh, headerSelectTrigger: headerSelectTrigger,
@@ -83,7 +83,7 @@ class QYGalleryCategoryItemController: QYCollectionController {
         
         viewModel.itemSelected.subscribe(onNext: { (item) in
             guard let galleryID = item.id else { return }
-//            globalNavigatorMap.push(QYProductUrl.galleryDetail(galleryID).path)
+            router.push(QYRouterInternal.galleryDetails(galleryID).path)
         }).disposed(by: rx.disposeBag)
         
         self.isLoading.subscribe(onNext: {[weak self] (isLoading) in

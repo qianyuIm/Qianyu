@@ -55,6 +55,7 @@ class QYViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -93,6 +94,7 @@ class QYViewController: UIViewController {
         guard viewModel != nil else {
             return
         }
+        
         viewModel!.indicator
             .drive(isLoading)
             .disposed(by: rx.disposeBag)

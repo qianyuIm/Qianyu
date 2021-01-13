@@ -16,9 +16,9 @@ class QYTableviewController: QYViewController {
         if #available(iOS 11.0, *) {
             tab.contentInsetAdjustmentBehavior = .never
             /// 影响cell 自动布局 
-//            tab.estimatedRowHeight = 0
-//            tab.estimatedSectionHeaderHeight = 0
-//            tab.estimatedSectionFooterHeight = 0
+            tab.estimatedRowHeight = 0
+            tab.estimatedSectionHeaderHeight = 0
+            tab.estimatedSectionFooterHeight = 0
         }
         tab.estimatedRowHeight = 44
         tab.rowHeight = UITableView.automaticDimension
